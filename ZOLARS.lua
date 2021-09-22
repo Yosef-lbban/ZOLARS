@@ -3556,7 +3556,7 @@ end
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'بوت' or text == 'بوتت' then 
 NameBot = (DevAbs:get(ZOLARS..'Abs:NameBot') or 'يوسف')
-local ZOLARSTEAM = {"لتقول بوت اسمي "..NameBot.." 😒🔪","اسمي الجميل "..NameBot.." 😚♥️","ترى أهلي سموني😒💔","نادوني "..NameBot.." كافي بوت 😒🔪","انت البوت لك 😒💔"} 
+local ZOLARSTEAM = {"لا تقول بوت اسمي "..NameBot.." 😒🔪","اسمي الجميل "..NameBot.." 😚♥️","ترى أهلي سموني😒💔","نادوني "..NameBot.." كافي بوت 😒🔪","انت البوت لك 😒💔"} 
 Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM[math.random(#ZOLARSTEAM)] , 1, 'html') 
 return false
 end
