@@ -1311,7 +1311,7 @@ local Text = [[
 ₪╽قفل • فتح ⤶ الصور
 ₪╽قفل • فتح ⤶ الفيديو
 ₪╽قفل • فتح ⤶ الاونلاين
-₪╽قفل • فتح ⤶ الدردشه
+₪╽قفل • فتح ⤶ الالدردشة
 ₪╽قفل • فتح ⤶ التوجيه
 ₪╽قفل • فتح ⤶ الاغاني
 ₪╽قفل • فتح ⤶ الصوت
@@ -1369,7 +1369,7 @@ local Text = [[
 ₪╽انشاء رابط
 ₪╽ضع وصف
 ₪╽ضع رابط
-₪╽ضع صوره
+₪╽ضع صورة
 ₪╽حذف الرابط
 ₪╽حذف المطايه
 ₪╽كشف البوتات
@@ -1444,7 +1444,7 @@ local Text = [[
 ₪╽الردود المتعدده
 ₪╽حذف الردود المتعدده
 ₪╽حذف قوائم المنع
-₪╽منع ⤶ بالرد على ( ملصق • صوره • متحركه )
+₪╽منع ⤶ بالرد على ( ملصق • صورة • متحركه )
 ₪╽حذف قائمه منع + ⤶ ⤹
 ( الصور • المتحركات • الملصقات )
 • • • • • • ₪ • • • • • •
@@ -1468,7 +1468,7 @@ local Text = [[
 ₪╽حذف الايدي ⤶ لحذف الكليشه
 • • • • • • ₪ • • • • • •
 ₪╽تفعيل • تعطيل + الامر ⤶ ⤹
-₪╽اطردني • الايدي بالصوره • الابراج
+₪╽اطردني • الايدي بالصورة • الابراج
 ₪╽معاني الاسماء • اوامر النسب • انطق
 ₪╽الايدي • تحويل الصيغ • اوامر التحشيش
 ₪╽ردود المدير • ردود المطور • التحقق
@@ -1646,7 +1646,7 @@ local Text = [[
 ₪╽صيحه • صيحها ⤶ بالرد • بالمعرف
 ₪╽صلاحياته ⤶ بالرد • بالمعرف • بالايدي
 ₪╽ايدي • كشف  ⤶ بالرد • بالمعرف • بالايدي
-₪╽تحويل + بالرد ⤶ صوره • ملصق • صوت • بصمه
+₪╽تحويل + بالرد ⤶ صورة • ملصق • صوت • بصمه
 ₪╽انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 • • • • • • ₪ • • • • • •
 ₪╽[Source Channel](https://t.me/yousef_labban1)
@@ -1739,11 +1739,11 @@ DevAbs:set(ZOLARS.."Set:Cmd:Group:New1"..msg.chat_id_..":من","رفع منشئ"
 DevAbs:sadd(ZOLARS.."List:Cmd:Group:New"..msg.chat_id_,"من")
 DevAbs:set(ZOLARS.."Set:Cmd:Group:New1"..msg.chat_id_..":اس","رفع منشئ اساسي")
 DevAbs:sadd(ZOLARS.."List:Cmd:Group:New"..msg.chat_id_,"اس")
-DevAbs:set(ZOLARS.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصوره")
+DevAbs:set(ZOLARS.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل الايدي بالصورة")
 DevAbs:sadd(ZOLARS.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
-DevAbs:set(ZOLARS.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
+DevAbs:set(ZOLARS.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصورة")
 DevAbs:sadd(ZOLARS.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
-send(msg.chat_id_, msg.id_,"₪╽تم ترتيب الاوامر بالشكل التالي ⤶ ⤹\n• • • • • • ₪ • • • • • •\n₪╽ايدي ⤶ ا\n₪╽تنزيل الكل ⤶ تك\n₪╽رفع مميز ⤶ م\n₪╽رفع ادمن ⤶ اد \n₪╽رفع مدير ⤶ مد \n₪╽رفع منشئ ⤶ من \n₪╽رفع منشئ اساسي ⤶ اس  \n₪╽تفعيل الايدي بالصوره ⤶ تفع\n₪╽تعطيل الايدي بالصوره ⤶ تعط\n• • • • • • ₪ • • • • • •")  
+send(msg.chat_id_, msg.id_,"₪╽تم ترتيب الاوامر بالشكل التالي ⤶ ⤹\n• • • • • • ₪ • • • • • •\n₪╽ايدي ⤶ ا\n₪╽تنزيل الكل ⤶ تك\n₪╽رفع مميز ⤶ م\n₪╽رفع ادمن ⤶ اد \n₪╽رفع مدير ⤶ مد \n₪╽رفع منشئ ⤶ من \n₪╽رفع منشئ اساسي ⤶ اس  \n₪╽تفعيل الايدي بالصورة ⤶ تفع\n₪╽تعطيل الايدي بالصورة ⤶ تعط\n• • • • • • ₪ • • • • • •")  
 end
 if text == "اضف امر" or text == "اضافة امر" or text == "اضافه امر" and ChCheck(msg) then
 DevAbs:set(ZOLARS.."Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
@@ -2057,7 +2057,7 @@ sendSticker(id_user, msg.id_, 0, 1,nil, msg.content_.sticker_.sticker_.persisten
 Text = '₪╽تم ارسال الملصق الى ⤶ ⤹'
 elseif msg.content_.ID == 'MessagePhoto' then    
 sendPhoto(id_user, msg.id_, 0, 1,nil, msg.content_.photo_.sizes_[0].photo_.persistent_id_,(msg.content_.caption_ or ''))    
-Text = '₪╽تم ارسال الصوره الى ⤶ ⤹'
+Text = '₪╽تم ارسال الصورة الى ⤶ ⤹'
 elseif msg.content_.ID == 'MessageAnimation' then    
 sendDocument(id_user, msg.id_, 0, 1,nil, msg.content_.animation_.animation_.persistent_id_)    
 Text = '₪╽تم ارسال المتحركه الى ⤶ ⤹'
@@ -2357,7 +2357,7 @@ if not Manager(msg) then
 local filter = DevAbs:smembers(ZOLARS.."Abs:FilterPhoto"..msg.chat_id_)
 for k,v in pairs(filter) do
 if v == msg.content_.photo_.id_ then
-ReplyStatus(msg,msg.sender_user_id_,"WrongWay","₪╽الصوره التي ارسلتها تم منعها من المجموعة")  
+ReplyStatus(msg,msg.sender_user_id_,"WrongWay","₪╽الصورة التي ارسلتها تم منعها من المجموعة")  
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 return false   
 end
@@ -6980,7 +6980,7 @@ end
 if result.content_.ID == "MessagePhoto" then
 local photo = result.content_.photo_.id_
 DevAbs:sadd(ZOLARS.."Abs:FilterPhoto"..msg.chat_id_,photo)
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽تم منع الصوره بنجاح لن يتم ارسالها مجددا', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽تم منع الصورة بنجاح لن يتم ارسالها مجددا', 1, 'md')
 return false
 end
 if result.content_.animation_ then
@@ -7004,7 +7004,7 @@ end
 if result.content_.ID == "MessagePhoto" then
 local photo = result.content_.photo_.id_
 DevAbs:srem(ZOLARS.."Abs:FilterPhoto"..msg.chat_id_,photo)
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽تم الغاء منع الصوره يمكنهم ارسالها الان', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽تم الغاء منع الصورة يمكنهم ارسالها الان', 1, 'md')
 return false
 end
 if result.content_.animation_.animation_ then
@@ -7040,7 +7040,7 @@ end
 if result.content_.sticker_ then 
 local Abs = json:decode(https.request('https://api.telegram.org/bot'.. TokenBot..'/getfile?file_id='..result.content_.sticker_.sticker_.persistent_id_)) 
 download_to_file('https://api.telegram.org/file/bot'..TokenBot..'/'..Abs.result.file_path,msg.sender_user_id_..'.jpg') 
-sendPhoto(msg.chat_id_, msg.id_, 0, 1,nil, './'..msg.sender_user_id_..'.jpg','₪╽تم تحويل الملصق الى صوره')     
+sendPhoto(msg.chat_id_, msg.id_, 0, 1,nil, './'..msg.sender_user_id_..'.jpg','₪╽تم تحويل الملصق الى صورة')     
 os.execute('rm -rf ./'..msg.sender_user_id_..'.jpg') 
 end
 if result.content_.audio_ then 
@@ -7460,7 +7460,7 @@ local user_msgs = DevAbs:get(ZOLARS..'Abs:UsersMsgs'..msg.chat_id_..':'..msg.sen
 local user_nkt = tonumber(DevAbs:get(ZOLARS..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_) or 0)
 local cont = (tonumber(DevAbs:get(ZOLARS..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0)
 local msguser = tonumber(DevAbs:get(ZOLARS..'Abs:UsersMsgs'..msg.chat_id_..':'..msg.sender_user_id_))
-local Texting = {"مو صوره ظيم بالنبي ،🤤💞","مقتنع بصورتك !؟ 😹🖤","ملاك وناسيك بقروبنه ،🤤💞","وفالله ،🤤💞","كشخه برب ،😉🤍","لزكت بيها دغيرها عاد ،😒😕","صورتك مامرتاحلها ،🙄😶","حلغوم والله ،🥺💘","مو صوره غنبله براسها ٦٠ حظ ،😹🤍"}
+local Texting = {"مو صورة ظيم بالنبي ،🤤💞","مقتنع بصورتك !؟ 😹🖤","ملاك وناسيك بقروبنه ،🤤💞","وفالله ،🤤💞","كشخه برب ،😉🤍","لزكت بيها دغيرها عاد ،😒😕","صورتك مامرتاحلها ،🙄😶","حلغوم والله ،🥺💘","مو صورة غنبله براسها ٦٠ حظ ،😹🤍"}
 local Description = Texting[math.random(#Texting)]
 if abbas.photos_[0] then
 if not DevAbs:get(ZOLARS..'Abs:Lock:Id'..msg.chat_id_) then 
@@ -7561,7 +7561,7 @@ notpicid = notpicid:gsub('#auto',(formsgs(msguser) or 'لا يوجد'))
 notpicid = notpicid:gsub('#stast',(IdRank(msg.sender_user_id_, msg.chat_id_) or 'لا يوجد'))
 notpicid = notpicid:gsub('#Description',(Description or 'لا يوجد'))
 else
-notpicid = "₪╽لا استطيع عرض صورتك لانك قمت بحظر البوت او انك لاتمتلك صوره في بروفايلك\n• • • • • • ₪ • • • • • •\n₪╽معرفك ⤶ ❨ "..username.." ❩\n₪╽ايديك ⤶ ❨ "..msg.sender_user_id_.." ❩\n₪╽رتبتك ⤶ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n₪╽رسائلك ⤶ ❨ "..user_msgs.." ❩\n₪╽سحكاتك ⤶ ❨ "..edit_msg.." ❩\n₪╽تفاعلك ⤶ "..formsgs(msguser).."\n₪╽نقاطك ⤶ ❨ "..user_nkt.." ❩\n• • • • • • ₪ • • • • • •\n"
+notpicid = "₪╽لا استطيع عرض صورتك لانك قمت بحظر البوت او انك لاتمتلك صورة في بروفايلك\n• • • • • • ₪ • • • • • •\n₪╽معرفك ⤶ ❨ "..username.." ❩\n₪╽ايديك ⤶ ❨ "..msg.sender_user_id_.." ❩\n₪╽رتبتك ⤶ "..IdRank(msg.sender_user_id_, msg.chat_id_).."\n₪╽رسائلك ⤶ ❨ "..user_msgs.." ❩\n₪╽سحكاتك ⤶ ❨ "..edit_msg.." ❩\n₪╽تفاعلك ⤶ "..formsgs(msguser).."\n₪╽نقاطك ⤶ ❨ "..user_nkt.." ❩\n• • • • • • ₪ • • • • • •\n"
 end 
 if not DevAbs:get(ZOLARS..'Abs:Lock:Id'..msg.chat_id_) then
 if not DevAbs:get(ZOLARS..'Abs:Lock:Id:Photo'..msg.chat_id_) then
@@ -7697,19 +7697,19 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽تم وضع زمن التكرار ⤶ '
 end
 --     Source dev-yousef     --
 if Manager(msg) then
-if text and text == 'تفعيل الايدي بالصوره' and ChCheck(msg) then
+if text and text == 'تفعيل الايدي بالصورة' and ChCheck(msg) then
 if not DevAbs:get(ZOLARS..'Abs:Lock:Id:Photo'..msg.chat_id_) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الايدي بالصوره بالتاكيد مفعل', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الايدي بالصورة بالتاكيد مفعل', 1, 'md')
 else
-local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽تم تفعيل الايدي بالصوره'
+local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽تم تفعيل الايدي بالصورة'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:del(ZOLARS..'Abs:Lock:Id:Photo'..msg.chat_id_)
 end end
-if text and text == 'تعطيل الايدي بالصوره' and ChCheck(msg) then
+if text and text == 'تعطيل الايدي بالصورة' and ChCheck(msg) then
 if DevAbs:get(ZOLARS..'Abs:Lock:Id:Photo'..msg.chat_id_) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الايدي بالصوره بالتاكيد معطل', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الايدي بالصورة بالتاكيد معطل', 1, 'md')
 else
-local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽تم تعطيل الايدي بالصوره'
+local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽تم تعطيل الايدي بالصورة'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:set(ZOLARS..'Abs:Lock:Id:Photo'..msg.chat_id_,true)
 end end 
@@ -8115,12 +8115,12 @@ end
 if Admin(msg) then
 if text and text:match("^قفل (.*)$") then
 local LockText = {string.match(text, "^(قفل) (.*)$")}
-if LockText[2] == "الدردشه" then
+if LockText[2] == "الالدردشة" then
 if not DevAbs:get(ZOLARS..'Abs:Lock:Text'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم قفل الدردشه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم قفل الالدردشة")  
 DevAbs:set(ZOLARS..'Abs:Lock:Text'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الدردشه بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الالدردشة بالفعل مقفله في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الاونلاين" then
@@ -8297,12 +8297,12 @@ end
 if Admin(msg) then
 if text and text:match("^فتح (.*)$") then
 local UnLockText = {string.match(text, "^(فتح) (.*)$")}
-if UnLockText[2] == "الدردشه" then
+if UnLockText[2] == "الالدردشة" then
 if DevAbs:get(ZOLARS..'Abs:Lock:Text'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم فتح الدردشه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم فتح الالدردشة")  
 DevAbs:del(ZOLARS..'Abs:Lock:Text'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الدردشه بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الالدردشة بالفعل مفتوحه في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الصور" then
@@ -8894,7 +8894,7 @@ local TXTE = "₪╽اعدادات المجموعة ⤶ ⤹\n• • • • •
 .."₪╽الصور ⤶ "..mute_photo.."\n"
 .."₪╽الفيديو ⤶ "..mute_video.."\n"
 .."₪╽الاونلاين ⤶ "..mute_in.."\n"
-.."₪╽الدردشه ⤶ "..mute_text.."\n"
+.."₪╽الالدردشة ⤶ "..mute_text.."\n"
 .."₪╽التوجيه ⤶ "..lock_forward.."\n"
 .."₪╽الاغاني ⤶ "..mute_music.."\n"
 .."₪╽الصوت ⤶ "..mute_voice.."\n"
@@ -9220,7 +9220,7 @@ if text == "الملصقات" then if DevAbs:get(ZOLARS..'Abs:Lock:Stickers'..ms
 if text == "الصور" then if DevAbs:get(ZOLARS..'Abs:Lock:Photo'..msg.chat_id_) then mute_photo = 'مقفوله' else mute_photo = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽الصور ⤶ "..mute_photo.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الفيديو" or text == "الفيديوهات" then if DevAbs:get(ZOLARS..'Abs:Lock:Videos'..msg.chat_id_) then mute_video = 'مقفوله' else mute_video = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽الفيديو ⤶ "..mute_video.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الاونلاين" then if DevAbs:get(ZOLARS..'Abs:Lock:Inline'..msg.chat_id_) then mute_in = 'مقفل' else mute_in = 'مفتوح' end local ZOLARSTEAM = "\n" .."₪╽الاونلاين ⤶ "..mute_in.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الدردشه" then if DevAbs:get(ZOLARS..'Abs:Lock:Text'..msg.chat_id_) then mute_text = 'مقفله' else mute_text = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽الدردشه ⤶ "..mute_text.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الالدردشة" then if DevAbs:get(ZOLARS..'Abs:Lock:Text'..msg.chat_id_) then mute_text = 'مقفله' else mute_text = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽الالدردشة ⤶ "..mute_text.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "التوجيه" or text == "اعاده التوجيه" then if DevAbs:get(ZOLARS..'Abs:Lock:Forwards'..msg.chat_id_) then lock_forward = 'مقفل' else lock_forward = 'مفتوح' end local ZOLARSTEAM = "\n" .."₪╽التوجيه ⤶ "..lock_forward.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الاغاني" then if DevAbs:get(ZOLARS..'Abs:Lock:Music'..msg.chat_id_) then mute_music = 'مقفوله' else mute_music = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽الاغاني ⤶ "..mute_music.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الصوت" or text == "الصوتيات" then if DevAbs:get(ZOLARS..'Abs:Lock:Voice'..msg.chat_id_) then mute_voice = 'مقفول' else mute_voice = 'مفتوح' end local ZOLARSTEAM = "\n" .."₪╽الصوت ⤶ "..mute_voice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
@@ -9358,12 +9358,12 @@ end,nil)
 DevAbs:del(ZOLARS..'Abs:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id_)
 end 
 end
-if text and text:match("^ضع صوره$") and ChCheck(msg) or text and text:match("^وضع صوره$") and ChCheck(msg) then
+if text and text:match("^ضع صورة$") and ChCheck(msg) or text and text:match("^وضع صورة$") and ChCheck(msg) then
 Dev_Abs(msg.chat_id_,msg.id_, 1, '₪╽ارسل صورة المجموعة الان', 1, 'md')
 DevAbs:set(ZOLARS..'Abs:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id_,true)
 end
 --     Source dev-yousef     --
-if text and text:match("^حذف الصوره$") and ChCheck(msg) or text and text:match("^مسح الصوره$") and ChCheck(msg) then
+if text and text:match("^حذف الصورة$") and ChCheck(msg) or text and text:match("^مسح الصورة$") and ChCheck(msg) then
 https.request("https://api.telegram.org/bot"..TokenBot.."/deleteChatPhoto?chat_id="..msg.chat_id_) 
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم حذف صورة المجموعة")  
 return false  
@@ -9770,7 +9770,7 @@ send(msg.chat_id_, msg.id_,"₪╽الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(ZOLARS.."Abs:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽ارسل لي سواء ⤶ ⤹ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n₪╽للخروج ارسل ⤶ ( الغاء ) \n ✓'
+local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽ارسل لي سواء ⤶ ⤹ \n❨ ملف • ملصق • متحركه • صورة\n • فيديو • بصمه • صوت • رساله ❩\n₪╽للخروج ارسل ⤶ ( الغاء ) \n ✓'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -9793,7 +9793,7 @@ elseif msg.content_.photo_.sizes_[1] then
 photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
 end
 for k,v in pairs(List) do 
-AbsText = "الصوره"
+AbsText = "الصورة"
 sendPhoto(v, 0, 0, 1, nil, photo,(msg.content_.caption_ or ''))
 end 
 elseif msg.content_.animation_ then
@@ -9837,7 +9837,7 @@ send(msg.chat_id_, msg.id_,"₪╽الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(ZOLARS.."Abs:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽ارسل لي سواء ⤶ ⤹ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n₪╽للخروج ارسل ⤶ ( الغاء ) \n ✓'
+local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽ارسل لي سواء ⤶ ⤹ \n❨ ملف • ملصق • متحركه • صورة\n • فيديو • بصمه • صوت • رساله ❩\n₪╽للخروج ارسل ⤶ ( الغاء ) \n ✓'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -9860,7 +9860,7 @@ elseif msg.content_.photo_.sizes_[1] then
 photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
 end
 for k,v in pairs(List) do 
-AbsText = "الصوره"
+AbsText = "الصورة"
 sendPhoto(v, 0, 0, 1, nil, photo,(msg.content_.caption_ or ''))
 end 
 elseif msg.content_.animation_ then
@@ -9952,7 +9952,7 @@ send(msg.chat_id_, msg.id_,"₪╽الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(ZOLARS.."Abs:Send:Gp:Pin"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽ارسل لي سواء ⤶ ⤹ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n₪╽للخروج ارسل ⤶ ( الغاء ) \n ✓'
+local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽ارسل لي سواء ⤶ ⤹ \n❨ ملف • ملصق • متحركه • صورة\n • فيديو • بصمه • صوت • رساله ❩\n₪╽للخروج ارسل ⤶ ( الغاء ) \n ✓'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -9976,7 +9976,7 @@ elseif msg.content_.photo_.sizes_[1] then
 photo = msg.content_.photo_.sizes_[1].photo_.persistent_id_
 end
 for k,v in pairs(List) do 
-AbsText = "الصوره"
+AbsText = "الصورة"
 sendPhoto(v, 0, 0, 1, nil, photo,(msg.content_.caption_ or ''))
 DevAbs:set(ZOLARS..'Abs:PinnedMsgs'..v,photo) 
 end 
@@ -10111,7 +10111,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽تم الغاء الامر" ,  1, "md")
 DevAbs:del(ZOLARS..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
 return false
 end
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽ارسل لي الرد سواء كان ⤶ ⤹\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n₪╽يمكنك اضافة الى النص ⤶ ⤹\n• • • • • • ₪ • • • • • •\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n• • • • • • ₪ • • • • • •\n₪╽للخروج ارسل ⤶ ( الغاء )\n ✓" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽ارسل لي الرد سواء كان ⤶ ⤹\n❨ ملف • ملصق • متحركه • صورة\n • فيديو • بصمه • صوت • رساله ❩\n₪╽يمكنك اضافة الى النص ⤶ ⤹\n• • • • • • ₪ • • • • • •\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n• • • • • • ₪ • • • • • •\n₪╽للخروج ارسل ⤶ ( الغاء )\n ✓" ,  1, "md")
 DevAbs:set(ZOLARS..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_,'SaveGpRed')
 DevAbs:set(ZOLARS..'Abs:Add:GpText'..msg.sender_user_id_..msg.chat_id_,text)
 DevAbs:sadd(ZOLARS..'Abs:Manager:GpRed'..msg.chat_id_,text)
@@ -10142,7 +10142,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽تم الغاء الامر" ,  1, "md")
 DevAbs:del(ZOLARS..'Abs:Add:AllRed'..msg.sender_user_id_)
 return false
 end
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽ارسل لي الرد سواء كان ⤶ ⤹\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n₪╽يمكنك اضافة الى النص ⤶ ⤹\n• • • • • • ₪ • • • • • •\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n• • • • • • ₪ • • • • • •\n₪╽للخروج ارسل ⤶ ( الغاء )\n ✓" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽ارسل لي الرد سواء كان ⤶ ⤹\n❨ ملف • ملصق • متحركه • صورة\n • فيديو • بصمه • صوت • رساله ❩\n₪╽يمكنك اضافة الى النص ⤶ ⤹\n• • • • • • ₪ • • • • • •\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n• • • • • • ₪ • • • • • •\n₪╽للخروج ارسل ⤶ ( الغاء )\n ✓" ,  1, "md")
 DevAbs:set(ZOLARS.."Abs:Add:AllRed"..msg.sender_user_id_,'SaveAllRed')
 DevAbs:set(ZOLARS.."Abs:Add:AllText"..msg.sender_user_id_, text)
 DevAbs:sadd(ZOLARS.."Abs:Sudo:AllRed",text)
@@ -10188,7 +10188,7 @@ dp = 'ملصق 🃏'
 elseif DevAbs:get(ZOLARS.."Abs:Text:GpRed"..v..msg.chat_id_) then
 dp = 'رساله ✉'
 elseif DevAbs:get(ZOLARS.."Abs:Photo:GpRed"..v..msg.chat_id_) then
-dp = 'صوره 🎇'
+dp = 'صورة 🎇'
 elseif DevAbs:get(ZOLARS.."Abs:Video:GpRed"..v..msg.chat_id_) then
 dp = 'فيديو 📽'
 elseif DevAbs:get(ZOLARS.."Abs:File:GpRed"..v..msg.chat_id_) then
@@ -10237,7 +10237,7 @@ dp = 'ملصق 🃏'
 elseif DevAbs:get(ZOLARS.."Abs:Text:AllRed"..v) then
 dp = 'رساله ✉'
 elseif DevAbs:get(ZOLARS.."Abs:Photo:AllRed"..v) then
-dp = 'صوره 🎇'
+dp = 'صورة 🎇'
 elseif DevAbs:get(ZOLARS.."Abs:Video:AllRed"..v) then
 dp = 'فيديو 📽'
 elseif DevAbs:get(ZOLARS.."Abs:File:AllRed"..v) then
@@ -10361,7 +10361,7 @@ local Text = [[
 ₪╽قفل • فتح ⤶ الصور
 ₪╽قفل • فتح ⤶ الفيديو
 ₪╽قفل • فتح ⤶ الاونلاين
-₪╽قفل • فتح ⤶ الدردشه
+₪╽قفل • فتح ⤶ الالدردشة
 ₪╽قفل • فتح ⤶ التوجيه
 ₪╽قفل • فتح ⤶ الاغاني
 ₪╽قفل • فتح ⤶ الصوت
@@ -10425,7 +10425,7 @@ local Text = [[
 ₪╽انشاء رابط
 ₪╽ضع وصف
 ₪╽ضع رابط
-₪╽ضع صوره
+₪╽ضع صورة
 ₪╽حذف الرابط
 ₪╽حذف المطايه
 ₪╽كشف البوتات
@@ -10506,7 +10506,7 @@ local Text = [[
 ₪╽الردود المتعدده
 ₪╽حذف الردود المتعدده
 ₪╽حذف قوائم المنع
-₪╽منع ⤶ بالرد على ( ملصق • صوره • متحركه )
+₪╽منع ⤶ بالرد على ( ملصق • صورة • متحركه )
 ₪╽حذف قائمه منع + ⤶ ⤹
 ( الصور • المتحركات • الملصقات )
 • • • • • • ₪ • • • • • •
@@ -10530,7 +10530,7 @@ local Text = [[
 ₪╽حذف الايدي ⤶ لحذف الكليشه
 • • • • • • ₪ • • • • • •
 ₪╽تفعيل • تعطيل + الامر ⤶ ⤹
-₪╽اطردني • الايدي بالصوره • الابراج
+₪╽اطردني • الايدي بالصورة • الابراج
 ₪╽معاني الاسماء • اوامر النسب • انطق
 ₪╽الايدي • تحويل الصيغ • اوامر التحشيش
 ₪╽ردود المدير • ردود المطور • التحقق
@@ -10726,7 +10726,7 @@ local Text = [[
 ₪╽صيحه • صيحها ⤶ بالرد • بالمعرف
 ₪╽صلاحياته ⤶ بالرد • بالمعرف • بالايدي
 ₪╽ايدي • كشف  ⤶ بالرد • بالمعرف • بالايدي
-₪╽تحويل + بالرد ⤶ صوره • ملصق • صوت • بصمه
+₪╽تحويل + بالرد ⤶ صورة • ملصق • صوت • بصمه
 ₪╽انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 • • • • • • ₪ • • • • • •
 ₪╽[Source Channel](https://t.me/yousef_labban1)
@@ -10970,7 +10970,7 @@ local Text = result.content_.text_
 if DevAbs:get(ZOLARS..'Abs:Lock:EditMsgs'..msg.chat_id_) and not Text and not BasicConstructor(result) then
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_})
 Media = 'الميديا'
-if result.content_.ID == "MessagePhoto" then Media = 'الصوره'
+if result.content_.ID == "MessagePhoto" then Media = 'الصورة'
 elseif result.content_.ID == "MessageSticker" then Media = 'الملصق'
 elseif result.content_.ID == "MessageVoice" then Media = 'البصمه'
 elseif result.content_.ID == "MessageAudio" then Media = 'الصوت'
