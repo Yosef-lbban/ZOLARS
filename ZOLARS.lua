@@ -10346,7 +10346,7 @@ return false end
 end
 if text == "م1" or text == "م١" or text == "اوامر1" or text == "اوامر١" then
 if not Admin(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽هذا الامر يخص الرتب الاعلى فقط\n₪╽ارسل ⤶ (م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽هذا الامر يخص الرتب الاعلى فقط\nلا تقوم بتكرارها', 1, 'md')
 else
 local Help = DevAbs:get(ZOLARS..'Abs:Help1')
 local Text = [[
@@ -10414,7 +10414,7 @@ return false end
 end
 if text == "م2" or text == "م٢" or text == "اوامر2" or text == "اوامر٢" then
 if not Admin(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽هذا الامر يخص الرتب الاعلى فقط\n₪╽ارسل ⤶ (م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽هذا الامر يخص الرتب الاعلى فقط\nلا تقوم بتكرارها', 1, 'md')
 else
 local Help = DevAbs:get(ZOLARS..'Abs:Help2')
 local Text = [[
@@ -10490,7 +10490,7 @@ return false end
 end
 if text == "م3" or text == "م٣" or text == "اوامر3" or text == "اوامر٣" then
 if not Admin(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽هذا الامر يخص الرتب الاعلى فقط\n₪╽ارسل ⤶ (م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽هذا الامر يخص الرتب الاعلى فقط\nلا تقوم بتكرارها', 1, 'md')
 else
 local Help = DevAbs:get(ZOLARS..'Abs:Help3')
 local Text = [[
@@ -10555,7 +10555,7 @@ return false end
 end
 if text == "م٤" or text == "م4" or text == "اوامر4" or text == "اوامر٤" then
 if not Admin(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽هذا الامر يخص الرتب الاعلى فقط\n₪╽ارسل ⤶ (م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽هذا الامر يخص الرتب الاعلى فقط\nلا تقوم بتكرارها', 1, 'md')
 else
 local Help = DevAbs:get(ZOLARS..'Abs:Help4')
 local Text = [[
