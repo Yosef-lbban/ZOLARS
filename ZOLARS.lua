@@ -820,15 +820,15 @@ MsgText = 'اسطورة التفاعل'
 elseif tonumber(msgs) < 5000 then 
 MsgText = 'متفاعل نار' 
 elseif tonumber(msgs) < 6000 then 
-MsgText = 'يجدح جدح' 
+MsgText = 'يبركان التفاعل' 
 elseif tonumber(msgs) < 7000 then 
 MsgText = 'خيالي' 
 elseif tonumber(msgs) < 8000 then 
-MsgText = 'رب التفاعل' 
+MsgText = 'أيقونة التفاعل' 
 elseif tonumber(msgs) < 9000 then 
-MsgText = 'كافر بالتفاعل' 
+MsgText = 'بحر التفاعل' 
 elseif tonumber(msgs) < 10000000000 then 
-MsgText = "معلك لربك" 
+MsgText = "أنت الملك" 
 end 
 return MsgText
 end
@@ -1472,7 +1472,7 @@ local Text = [[
 ₪╽معاني الاسماء • اوامر النسب • انطق
 ₪╽الايدي • تحويل الصيغ • اوامر التحشيش
 ₪╽ردود المدير • ردود المطور • التحقق
-₪╽ضافني • حساب العمر • الزخرفه • غنيلي
+₪╽ضافني • حساب العمر • الزخرفه • 00000
 • • • • • • ₪ • • • • • •
 ₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
@@ -1624,12 +1624,12 @@ local Text = [[
 ₪╽اوامر الاعضاء ⤶ ⤹
 • • • • • • ₪ • • • • • •
 ₪╽السورس • موقعي • رتبتي • معلوماتي 
-₪╽رقمي • لقبي • نبذتي • صلاحياتي • غنيلي
+₪╽رقمي • لقبي • نبذتي • صلاحياتي • 00000
 ₪╽رسائلي • حذف رسائلي • اسمي • معرفي 
 ₪╽ايدي •ايديي • جهاتي • راسلني • الالعاب 
 ₪╽نقاطي • بيع نقاطي • القوانين • زخرفه 
 ₪╽رابط الحذف • نزلني • اطردني • المطور 
-₪╽منو ضافني • مشاهدات المنشور • الرابط 
+₪╽مين ضافني • مشاهدات المنشور • الرابط 
 ₪╽ايدي المجموعة • معلومات المجموعة 
 ₪╽نسبه الحب • نسبه الكره • نسبه الغباء 
 ₪╽نسبه الرجوله • نسبه الانوثه • التفاعل
@@ -9185,17 +9185,17 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
 end
 --     Source dev-yousef     --
-if text == "تفعيل غنيلي" and Manager(msg) and ChCheck(msg) then
-local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽تم تفعيل غنيلي بنجاح'
+if text == "تفعيل 00000" and Manager(msg) and ChCheck(msg) then
+local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽تم تفعيل 00000 بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:del(ZOLARS..'Abs:Audios:Abs'..msg.chat_id_) 
 end
-if text == "تعطيل غنيلي" and Manager(msg) and ChCheck(msg) then
-local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽تم تعطيل غنيلي بنجاح'
+if text == "تعطيل 00000" and Manager(msg) and ChCheck(msg) then
+local ZOLARSTEAM = '₪╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n₪╽تم تعطيل 00000 بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:set(ZOLARS..'Abs:Audios:Abs'..msg.chat_id_,true)  
 end
-if text == "غنيلي" and not DevAbs:get(ZOLARS..'Abs:Audios:Abs'..msg.chat_id_) and ChCheck(msg) then
+if text == "00000" and not DevAbs:get(ZOLARS..'Abs:Audios:Abs'..msg.chat_id_) and ChCheck(msg) then
 data,res = https.request('https://apiabs.ml/Audios.php')
 if res == 200 then
 Audios = json:decode(data)
@@ -10534,7 +10534,7 @@ local Text = [[
 ₪╽معاني الاسماء • اوامر النسب • انطق
 ₪╽الايدي • تحويل الصيغ • اوامر التحشيش
 ₪╽ردود المدير • ردود المطور • التحقق
-₪╽ضافني • حساب العمر • الزخرفه • غنيلي
+₪╽ضافني • حساب العمر • الزخرفه • 00000
 • • • • • • ₪ • • • • • •
 ₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
@@ -10704,12 +10704,12 @@ local Text = [[
 ₪╽اوامر الاعضاء ⤶ ⤹
 • • • • • • ₪ • • • • • •
 ₪╽السورس • موقعي • رتبتي • معلوماتي 
-₪╽رقمي • لقبي • نبذتي • صلاحياتي • غنيلي
+₪╽رقمي • لقبي • نبذتي • صلاحياتي • 00000
 ₪╽رسائلي • حذف رسائلي • اسمي • معرفي 
 ₪╽ايدي •ايديي • جهاتي • راسلني • الالعاب 
 ₪╽نقاطي • بيع نقاطي • القوانين • زخرفه 
 ₪╽رابط الحذف • نزلني • اطردني • المطور 
-₪╽منو ضافني • مشاهدات المنشور • الرابط 
+₪╽مين ضافني • مشاهدات المنشور • الرابط 
 ₪╽ايدي المجموعة • معلومات المجموعة 
 ₪╽نسبه الحب • نسبه الكره • نسبه الغباء 
 ₪╽نسبه الرجوله • نسبه الانوثه • التفاعل
