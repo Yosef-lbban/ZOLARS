@@ -1498,8 +1498,8 @@ local Text = [[
 ₪╽تعين عدد الحذف - تفعيل الحذف التلقائي - تعطيل الحذف التلقائي
 ₪╽ترتيب الاوامر
 ₪╽اضف • حذف ⤶ امر
-₪╽حذف الاوامر المضافه
-₪╽الاوامر المضافه
+₪╽حذف الاوامر المضافة
+₪╽الاوامر المضافة
 ₪╽اضف نقاط ⤶ بالرد • بالايدي
 ₪╽اضف رسائل ⤶ بالرد • بالايدي
 ₪╽رفع منظف • تنزيل منظف
@@ -1700,9 +1700,9 @@ DevAbs:del(ZOLARS.."Set:Cmd:Group1"..msg.chat_id_..":"..msg.sender_user_id_)
 return false
 end
 if Constructor(msg) then
-if text == "الاوامر المضافه" and ChCheck(msg) then
+if text == "الاوامر المضافة" and ChCheck(msg) then
 local List = DevAbs:smembers(ZOLARS.."List:Cmd:Group:New"..msg.chat_id_.."") 
-t = "₪╽قائمة الاوامر المضافه ⤶ ⤹ \n• • • • • • ₪ • • • • • •\n"
+t = "₪╽قائمة الاوامر المضافة ⤶ ⤹ \n• • • • • • ₪ • • • • • •\n"
 for k,v in pairs(List) do
 Cmds = DevAbs:get(ZOLARS.."Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
 if Cmds then 
@@ -1712,17 +1712,17 @@ t = t..k.."~ ("..v..") \n"
 end
 end
 if #List == 0 then
-t = "₪╽لاتوجد اوامر مضافه في المجموعة"
+t = "₪╽لاتوجد اوامر مضافة في المجموعة"
 end
 Dev_Abs(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
-if text == "حذف الاوامر المضافه" or text == "حذف الاوامر" or text == "مسح الاوامر المضافه" and ChCheck(msg) then
+if text == "حذف الاوامر المضافة" or text == "حذف الاوامر" or text == "مسح الاوامر المضافة" and ChCheck(msg) then
 local List = DevAbs:smembers(ZOLARS.."List:Cmd:Group:New"..msg.chat_id_)
 for k,v in pairs(List) do
 DevAbs:del(ZOLARS.."Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
 DevAbs:del(ZOLARS.."List:Cmd:Group:New"..msg.chat_id_)
 end
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽تم حذف الاوامر المضافه في المجموعة", 1, 'html')
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽تم حذف الاوامر المضافة في المجموعة", 1, 'html')
 end
 if text == "ترتيب الاوامر" then
 DevAbs:set(ZOLARS.."Set:Cmd:Group:New1"..msg.chat_id_..":ا","ايدي")
@@ -1760,10 +1760,10 @@ end
 if text == "الصلاحيات" or text == "صلاحيات" and ChCheck(msg) then 
 local List = DevAbs:smembers(ZOLARS.."Coomds"..msg.chat_id_)
 if #List == 0 then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لاتوجد صلاحيات مضافه", 1, 'html')
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لاتوجد صلاحيات مضافة", 1, 'html')
 return false
 end
-t = "₪╽قائمة الصلاحيات المضافه ⤶ ⤹ \n• • • • • • ₪ • • • • • •\n"
+t = "₪╽قائمة الصلاحيات المضافة ⤶ ⤹ \n• • • • • • ₪ • • • • • •\n"
 for k,v in pairs(List) do
 var = DevAbs:get(ZOLARS.."Comd:New:rt:Abs:"..v..msg.chat_id_)
 if var then
@@ -1781,7 +1781,7 @@ for k,v in pairs(List) do
 DevAbs:del(ZOLARS.."Comd:New:rt:Abs:"..v..msg.chat_id_)
 DevAbs:del(ZOLARS.."Coomds"..msg.chat_id_)
 end
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽تم حذف الصلاحيات المضافه", 1, 'html')
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽تم حذف الصلاحيات المضافة", 1, 'html')
 end
 end
 if text and text:match("^اضف صلاحيه (.*)$") and ChCheck(msg) then 
@@ -4595,13 +4595,13 @@ end
 if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽@cCVCcBoT', 1, 'md') end
 if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then local inline = {{{text="اضغط هنا",url="https://t.me/cClCcBoT"}}} SendInline(msg.chat_id_,'₪╽اضغط للحصول على الرابط',nil,inline) return false end
 if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنا",url="https://t.me/cClCcBoT"}}} SendInline(msg.chat_id_,'₪╽اضغط للحصول على البوت',nil,inline) return false end
-if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(DevAbs:get(ZOLARS..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽عدد جهاتك المضافه ⤶ *❨ "..add.." ❩* ", 1, 'md') end
+if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(DevAbs:get(ZOLARS..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽عدد جهاتك المضافة ⤶ *❨ "..add.." ❩* ", 1, 'md') end
 if text == "تعديلاتي" or text == "تعديلاتي" and ChCheck(msg) then local edit_msg = DevAbs:get(ZOLARS..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0  Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽عدد تعديلاتك ⤶ *❨ "..edit_msg.." ❩* ", 1, 'md') end
 if text == "ايديي" and ChCheck(msg) then Dev_Abs(msg.chat_id_, msg.id_, 1,'₪╽ايديك ⤶ ❨ `'..msg.sender_user_id_..'` ❩', 1, 'md') end
 if text == "رتبتي" and ChCheck(msg) then Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽رتبتك ⤶ '..IdRank(msg.sender_user_id_, msg.chat_id_), 1, 'html') end
 if text == "ايدي المجموعة" and ChCheck(msg) then Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽ايدي المجموعة ⤶ `"..msg.chat_id_.."`", 1, 'md') end
 if text == 'مسح تعديلاتي' or text == 'مسح تعديلاتي' or text == 'حذف تعديلاتي' or text == 'حذف تعديلاتي' then DevAbs:del(ZOLARS..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽تم حذف جميع تعديلاتك بنجاح' , 1, 'md') end
-if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'حذف جهاتي' or text == 'حذف اضافاتي' then DevAbs:del(ZOLARS..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽تم حذف جميع جهاتك المضافه' , 1, 'md') end
+if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'حذف جهاتي' or text == 'حذف اضافاتي' then DevAbs:del(ZOLARS..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽تم حذف جميع جهاتك المضافة' , 1, 'md') end
 --     Source dev-yousef     --
 if text == "المطور" then 
 local DevText = DevAbs:get(ZOLARS.."DevText")
@@ -10025,7 +10025,7 @@ end
 if text == 'حذف رد من متعدد' and Manager(msg) and ChCheck(msg) or text == 'مسح رد من متعدد' and Manager(msg) and ChCheck(msg) then
 local List = DevAbs:smembers(ZOLARS..'Abs:Manager:GpRedod'..msg.chat_id_)
 if #List == 0 then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود متعدده مضافه" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود متعدده مضافة" ,  1, "md")
 return false
 end
 DevAbs:set(ZOLARS..'Abs:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_,'DelGpRedRedod')
@@ -10052,7 +10052,7 @@ end end
 if text == 'حذف رد متعدد' and Manager(msg) and ChCheck(msg) or text == 'مسح رد متعدد' and Manager(msg) and ChCheck(msg) then
 local List = DevAbs:smembers(ZOLARS..'Abs:Manager:GpRedod'..msg.chat_id_)
 if #List == 0 then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود متعدده مضافه" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود متعدده مضافة" ,  1, "md")
 return false
 end
 DevAbs:set(ZOLARS..'Abs:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_,'DelGpRedod')
@@ -10091,7 +10091,7 @@ end end
 if text == 'حذف رد' and Manager(msg) and ChCheck(msg) or text == 'مسح رد' and  Manager(msg) and ChCheck(msg) then
 local List = DevAbs:smembers(ZOLARS..'Abs:Manager:GpRed'..msg.chat_id_)
 if #List == 0 then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود مضافه" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود مضافة" ,  1, "md")
 return false
 end
 DevAbs:set(ZOLARS..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_,'DelGpRed')
@@ -10122,7 +10122,7 @@ end end
 if text == 'حذف رد عام' and SecondSudo(msg) or text == '⤶ حذف رد عام ⌁' and SecondSudo(msg) or text == 'مسح رد عام' and SecondSudo(msg) then
 local List = DevAbs:smembers(ZOLARS.."Abs:Sudo:AllRed")
 if #List == 0 then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود مضافه" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود مضافة" ,  1, "md")
 return false
 end
 DevAbs:set(ZOLARS.."Abs:Add:AllRed"..msg.sender_user_id_,'DelAllRed')
@@ -10157,14 +10157,14 @@ for k,v in pairs(redod) do
 MsgRep = MsgRep..k..'~ (`'..v..'`) • {*العدد ⤶ '..#DevAbs:smembers(ZOLARS..'Abs:Text:GpTexts'..v..msg.chat_id_)..'*}\n' 
 end
 if #redod == 0 then
-MsgRep = '₪╽لا توجد ردود متعدده مضافه'
+MsgRep = '₪╽لا توجد ردود متعدده مضافة'
 end
 send(msg.chat_id_,msg.id_,MsgRep)
 end
 if text == 'حذف الردود المتعدده' and Manager(msg) and ChCheck(msg) or text == 'مسح الردود المتعدده' and Manager(msg) and ChCheck(msg) then
 local redod = DevAbs:smembers(ZOLARS..'Abs:Manager:GpRedod'..msg.chat_id_)
 if #redod == 0 then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود متعدده مضافه" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود متعدده مضافة" ,  1, "md")
 else
 for k,v in pairs(redod) do
 DevAbs:del(ZOLARS..'Abs:Text:GpTexts'..v..msg.chat_id_)
@@ -10199,14 +10199,14 @@ end
 MsgRep = MsgRep..k..'~ (`'..v..'`) ⤶ {*'..dp..'*}\n' 
 end
 if #redod == 0 then
-MsgRep = '₪╽لا توجد ردود مضافه'
+MsgRep = '₪╽لا توجد ردود مضافة'
 end
 send(msg.chat_id_,msg.id_,MsgRep)
 end
 if text == 'حذف الردود' and Manager(msg) and ChCheck(msg) or text == 'مسح الردود' and Manager(msg) and ChCheck(msg) or text == 'حذف ردود المدير' and Manager(msg) and ChCheck(msg) or text == 'مسح ردود المدير' and Manager(msg) and ChCheck(msg) then
 local redod = DevAbs:smembers(ZOLARS..'Abs:Manager:GpRed'..msg.chat_id_)
 if #redod == 0 then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود مضافه" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود مضافة" ,  1, "md")
 else
 for k,v in pairs(redod) do
 DevAbs:del(ZOLARS..'Abs:Gif:GpRed'..v..msg.chat_id_)
@@ -10248,14 +10248,14 @@ end
 MsgRep = MsgRep..k..'~ (`'..v..'`) ⤶ {*'..dp..'*}\n' 
 end
 if #redod == 0 then
-MsgRep = '₪╽لا توجد ردود مضافه'
+MsgRep = '₪╽لا توجد ردود مضافة'
 end
 send(msg.chat_id_,msg.id_,MsgRep)
 end
 if text == "حذف ردود المطور" and SecondSudo(msg) or text == "حذف ردود العام" and SecondSudo(msg) or text == "مسح ردود المطور" and SecondSudo(msg) then
 local redod = DevAbs:smembers(ZOLARS.."Abs:Sudo:AllRed")
 if #redod == 0 then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود مضافه" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽لا توجد ردود مضافة" ,  1, "md")
 else
 for k,v in pairs(redod) do
 DevAbs:del(ZOLARS.."Abs:Add:AllRed"..v)
@@ -10566,8 +10566,8 @@ local Text = [[
 ₪╽تعين عدد الحذف - تفعيل الحذف التلقائي - تعطيل الحذف التلقائي
 ₪╽ترتيب الاوامر
 ₪╽اضف • حذف ⤶ امر
-₪╽حذف الاوامر المضافه
-₪╽الاوامر المضافه
+₪╽حذف الاوامر المضافة
+₪╽الاوامر المضافة
 ₪╽اضف نقاط ⤶ بالرد • بالايدي
 ₪╽اضف رسائل ⤶ بالرد • بالايدي
 ₪╽رفع منظف • تنزيل منظف
