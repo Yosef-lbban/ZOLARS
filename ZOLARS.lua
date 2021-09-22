@@ -1330,9 +1330,9 @@ local Text = [[
 ₪╽قفل • فتح ⤶ الكفر
 ₪╽قفل • فتح ⤶ الطائفيه
 ₪╽قفل • فتح ⤶ الكل
-₪╽قفل • فتح ⤶ العربيه
+₪╽قفل • فتح ⤶ العربية
 ₪╽قفل • فتح ⤶ الانكليزيه
-₪╽قفل • فتح ⤶ الفارسيه
+₪╽قفل • فتح ⤶ الفارسية
 ₪╽قفل • فتح ⤶ التفليش
 • • • • • • ₪ • • • • • •
 ₪╽اوامر حماية اخرى ⤶ ⤹
@@ -1341,7 +1341,7 @@ local Text = [[
 ₪╽التكرار بالطرد
 ₪╽التكرار بالكتم
 ₪╽التكرار بالتقيد
-₪╽الفارسيه بالطرد
+₪╽الفارسية بالطرد
 ₪╽البوتات بالطرد
 ₪╽البوتات بالتقيد
 • • • • • • ₪ • • • • • •
@@ -3344,7 +3344,7 @@ end end
 if text and (text:match("ڬ") or text:match("ٺ") or text:match("چ") or text:match("ڇ") or text:match("ڿ") or text:match("ڀ") or text:match("ڎ") or text:match("ݫ") or text:match("ژ") or text:match("ڟ") or text:match("ݜ") or text:match("ڸ") or text:match("پ") or text:match("۴") or text:match("مک") or text:match("زدن") or text:match("دخترا") or text:match("دیوث") or text:match("کلیپشن") or text:match("خوششون") or text:match("میدا") or text:match("که") or text:match("بدانیم") or text:match("باید") or text:match("زناشویی") or text:match("آموزش") or text:match("راحتی") or text:match("خسته") or text:match("بیام") or text:match("بپوشم") or text:match("كرمه")) then
 if DevAbs:get(ZOLARS.."Abs:Lock:Farsi"..msg.chat_id_) and not VipMem(msg) then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
-ReplyStatus(msg,msg.sender_user_id_,"WrongWay","₪╽ممنوع التكلم بالغه الفارسيه هنا")  
+ReplyStatus(msg,msg.sender_user_id_,"WrongWay","₪╽ممنوع التكلم بالغه الفارسية هنا")  
 end end
 if text and (text:match("ڬ") or text:match("ٺ") or text:match("چ") or text:match("ڇ") or text:match("ڿ") or text:match("ڀ") or text:match("ڎ") or text:match("ݫ") or text:match("ژ") or text:match("ڟ") or text:match("ݜ") or text:match("ڸ") or text:match("پ") or text:match("۴") or text:match("مک") or text:match("زدن") or text:match("دخترا") or text:match("دیوث") or text:match("کلیپشن") or text:match("خوششون") or text:match("میدا") or text:match("که") or text:match("بدانیم") or text:match("باید") or text:match("زناشویی") or text:match("آموزش") or text:match("راحتی") or text:match("خسته") or text:match("بیام") or text:match("بپوشم") or text:match("كرمه")) then
 if DevAbs:get(ZOLARS.."Abs:Lock:FarsiBan"..msg.chat_id_) and not VipMem(msg) then
@@ -4092,7 +4092,7 @@ name = string.gsub(name,'30','₪╽كم جزء يحتوي القران الكر
 name = string.gsub(name,'بوتين','₪╽من هوه اغنى رئيس في العالم ؟\n1- ترامب\n2- اوباما\n3- بوتين')
 name = string.gsub(name,'ستيف جوبر','₪╽من هوه مؤسس شركه ابل العالميه  ؟\n1- لاري بايج\n2- بيل جيتس\n3- ستيف جوبر')
 name = string.gsub(name,'باريس','ماهي عاصمه فرنسا ؟\n1- باريس\n2- لوين\n3- موسكو')
-name = string.gsub(name,'10','₪╽ماعدد دول العربيه التي توجد في افريقيا ؟\n1- 10\n2- 17\n3- 9')
+name = string.gsub(name,'10','₪╽ماعدد دول العربية التي توجد في افريقيا ؟\n1- 10\n2- 17\n3- 9')
 name = string.gsub(name,'النمل','₪╽ماهو الحيوان الذي يحمل 50 فوق وزنه ؟\n1- الفيل\n2- النمل\n3- الثور')
 name = string.gsub(name,'حرف الواو','₪╽ماذا يوجد بيني وبينك ؟\n1- الضل\n2- الاخلاق\n3- حرف الواو')
 name = string.gsub(name,'الشعر','₪╽ماهو الشيء النبات ينبت للانسان بلا بذر ؟\n1- الاضافر\n2- الاسنان\n3- الشعر')
@@ -7598,12 +7598,12 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽تعديل الميديا بالفعل مقفل في المجموعة', 1, 'md')
 end
 end
-if LockText[2] == "الفارسيه" then
+if LockText[2] == "الفارسية" then
 if not DevAbs:get(ZOLARS..'Abs:Lock:Farsi'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم قفل الفارسيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم قفل الفارسية")  
 DevAbs:set(ZOLARS..'Abs:Lock:Farsi'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الفارسيه بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الفارسية بالفعل مقفله في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "السب" then
@@ -7630,12 +7630,12 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الكفر بالفعل مقفل في المجموعة', 1, 'md')
 end
 end
-if LockText[2] == "الفارسيه بالطرد" then
+if LockText[2] == "الفارسية بالطرد" then
 if not DevAbs:get(ZOLARS..'Abs:Lock:FarsiBan'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم قفل الفارسيه بالطرد")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم قفل الفارسية بالطرد")  
 DevAbs:set(ZOLARS..'Abs:Lock:FarsiBan'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الفارسيه بالطرد بالفعل مقفله ', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الفارسية بالطرد بالفعل مقفله ', 1, 'md')
 end
 end
 if LockText[2] == "البوتات" or LockText[2] == "البوتات بالحذف" then
@@ -8052,12 +8052,12 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽تعديل الميديا بالفعل مفتوح في المجموعة', 1, 'md')
 end
 end
-if UnLockText[2] == "الفارسيه" then
+if UnLockText[2] == "الفارسية" then
 if DevAbs:get(ZOLARS..'Abs:Lock:Farsi'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم فتح الفارسيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم فتح الفارسية")  
 DevAbs:del(ZOLARS..'Abs:Lock:Farsi'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الفارسيه بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الفارسية بالفعل مفتوحه في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "السب" then
@@ -8084,12 +8084,12 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الكفر بالفعل مفتوح في المجموعة', 1, 'md')
 end
 end
-if UnLockText[2] == "الفارسيه بالطرد" then
+if UnLockText[2] == "الفارسية بالطرد" then
 if DevAbs:get(ZOLARS..'Abs:Lock:FarsiBan'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم فتح الفارسيه بالطرد")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم فتح الفارسية بالطرد")  
 DevAbs:del(ZOLARS..'Abs:Lock:FarsiBan'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الفارسيه بالطرد بالفعل مفتوحه', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الفارسية بالطرد بالفعل مفتوحه', 1, 'md')
 end
 end
 if UnLockText[2] == "البوتات" or UnLockText[2] == "البوتات بالطرد" or UnLockText[2] == "البوتات بالتقييد" or UnLockText[2] == "البوتات بالتقيد" then
@@ -8243,12 +8243,12 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الشبكات بالفعل مقفله في المجموعة', 1, 'md')
 end
 end
-if LockText[2] == "العربيه" then
+if LockText[2] == "العربية" then
 if not DevAbs:get(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم قفل العربيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم قفل العربية")  
 DevAbs:set(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽العربيه بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽العربية بالفعل مقفله في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الانكليزيه" then
@@ -8433,12 +8433,12 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الشبكات بالفعل مفتوحه في المجموعة', 1, 'md')
 end
 end
-if UnLockText[2] == "العربيه" then
+if UnLockText[2] == "العربية" then
 if DevAbs:get(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم فتح العربيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم فتح العربية")  
 DevAbs:del(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽العربيه بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽العربية بالفعل مفتوحه في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الانكليزيه" then
@@ -8911,9 +8911,9 @@ local TXTE = "₪╽اعدادات المجموعة ⤶ ⤹\n• • • • •
 .."₪╽السب ⤶ "..lock_fshar.."\n"
 .."₪╽الكفر ⤶ "..lock_kaf.."\n"
 .."₪╽الطائفيه ⤶ "..lock_taf.."\n"
-.."₪╽العربيه ⤶ "..lock_arabic.."\n"
+.."₪╽العربية ⤶ "..lock_arabic.."\n"
 .."₪╽الانكليزيه ⤶ "..lock_english.."\n"
-.."₪╽الفارسيه ⤶ "..lock_farsi.."\n"
+.."₪╽الفارسية ⤶ "..lock_farsi.."\n"
 .."₪╽التكرار ⤶ "..flood.."\n"
 .."₪╽عدد التكرار ⤶ "..Flood_Num.."\n"
 .."₪╽عدد السبام ⤶ "..spam_c.."\n"
@@ -9234,7 +9234,7 @@ if text == "المنشورات" then if DevAbs:get(ZOLARS..'Abs:Lock:Spam'..msg.
 if text == "الدخول" then if DevAbs:get(ZOLARS..'Abs:Lock:Join'..msg.chat_id_) then lock_Join = 'مقفول' else lock_Join = 'مفتوح' end local ZOLARSTEAM = "\n" .."₪╽الدخول ⤶ "..lock_Join.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الشبكات" then if DevAbs:get(ZOLARS..'Abs:Lock:WebLinks'..msg.chat_id_) then lock_wp = 'مقفوله' else lock_wp = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽الشبكات ⤶ "..lock_wp.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "المواقع" then if DevAbs:get(ZOLARS..'Abs:Lock:Location'..msg.chat_id_) then lock_location = 'مقفوله' else lock_location = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽المواقع ⤶ "..lock_location.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "العربيه" then if DevAbs:get(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_) then lock_arabic = 'مقفوله' else lock_arabic = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽العربيه ⤶ "..lock_arabic.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "العربية" then if DevAbs:get(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_) then lock_arabic = 'مقفوله' else lock_arabic = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽العربية ⤶ "..lock_arabic.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الانكليزيه" then if DevAbs:get(ZOLARS..'Abs:Lock:English'..msg.chat_id_) then lock_english = 'مقفوله' else lock_english = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽الانكليزيه ⤶ "..lock_english.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الكفر" then if DevAbs:get(ZOLARS..'Abs:Lock:Kfr'..msg.chat_id_) then lock_kaf = 'مفتوح' else lock_kaf = 'مقفل' end local ZOLARSTEAM = "\n" .."₪╽الكفر ⤶ "..lock_kaf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "السب" then if DevAbs:get(ZOLARS..'Abs:Lock:Fshar'..msg.chat_id_) then lock_fshar = 'مفتوح' else lock_fshar = 'مقفل' end local ZOLARSTEAM = "\n" .."₪╽السب ⤶ "..lock_fshar.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
@@ -10380,9 +10380,9 @@ local Text = [[
 ₪╽قفل • فتح ⤶ الكفر
 ₪╽قفل • فتح ⤶ الطائفيه
 ₪╽قفل • فتح ⤶ الكل
-₪╽قفل • فتح ⤶ العربيه
+₪╽قفل • فتح ⤶ العربية
 ₪╽قفل • فتح ⤶ الانكليزيه
-₪╽قفل • فتح ⤶ الفارسيه
+₪╽قفل • فتح ⤶ الفارسية
 ₪╽قفل • فتح ⤶ التفليش
 • • • • • • ₪ • • • • • •
 ₪╽اوامر حماية اخرى ⤶ ⤹
@@ -10391,7 +10391,7 @@ local Text = [[
 ₪╽التكرار بالطرد
 ₪╽التكرار بالكتم
 ₪╽التكرار بالتقيد
-₪╽الفارسيه بالطرد
+₪╽الفارسية بالطرد
 ₪╽البوتات بالطرد
 ₪╽البوتات بالتقيد
 • • • • • • ₪ • • • • • •
