@@ -930,7 +930,7 @@ DevAbs:srem(ZOLARS..'User:Donky:'..data.chat_id_,data.sender_user_id_)
 EditMsg(Chat_Id2, Msg_Id2, "₪╽تم تنزيلك من ⤶ ⤹\n~ ( "..constructor..Managers..admins..vipmem..cleaner..donky.." ) ~ \n") 
 else 
 if IdRank(data.sender_user_id_, data.chat_id_) == 'العضو' then
-EditMsg(Chat_Id2, Msg_Id2, "₪╽ليس لديك رتبه في البوت") 
+EditMsg(Chat_Id2, Msg_Id2, "₪╽ليس لديك رتبة في البوت") 
 else 
 EditMsg(Chat_Id2, Msg_Id2, "₪╽لا استطيع تنزيل ⤶ "..IdRank(data.sender_user_id_, data.chat_id_)) 
 end
@@ -1344,6 +1344,8 @@ local Text = [[
 ₪╽الفارسية بالطرد
 ₪╽البوتات بالطرد
 ₪╽البوتات بالتقيد
+₪╽قفل • فتح ⤶ التحقق
+₪╽تعطيل • تفعيل ⤶ التحقق
 • • • • • • ₪ • • • • • •
 ₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
@@ -1457,7 +1459,7 @@ local Text = [[
 ₪╽اعاده التثبيت
 ₪╽الغاء تثبيت الكل
 • • • • • • ₪ • • • • • •
-₪╽تغير رد + اسم الرتبه + النص ⤶ ⤹
+₪╽تغير رد + اسم الرتبة + النص ⤶ ⤹
 ₪╽المطور • منشئ الاساسي
 ₪╽المنشئ • المدير • الادمن
 ₪╽المميز • المنظف • العضو
@@ -3762,7 +3764,7 @@ name = string.gsub(name,'حاسوب','س ا ح و ب')
 name = string.gsub(name,'انترنيت','ا ت ن ر ن ي ت')
 name = string.gsub(name,'ساحه','ح ا ه س')
 name = string.gsub(name,'جسر','ر ج س')
-ZOLARSTEAM = '₪╽اول واحد يرتبها يربح ⤶ '..name
+ZOLARSTEAM = '₪╽اول واحد يرتبةا يربح ⤶ '..name
 Dev_Abs(msg.chat_id_, msg.id_, 1,ZOLARSTEAM, 1, 'md')
 return false
 end end
@@ -5656,7 +5658,7 @@ ReplyStatus(msg,user,"Reply","₪╽تم تنزيله من قائمة الممي
 end end 
 --     Source dev-yousef     --
 --       Set Inline       --
-if text ==('رفع رتبه') and ChCheck(msg) then
+if text ==('رفع رتبة') and ChCheck(msg) then
 function prom_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,dp) 
 if dp.first_name_ == false then
@@ -5690,7 +5692,7 @@ end
 end
 --     Source dev-yousef     --
 --       Rem Inline       --
-if text ==('تنزيل رتبه') and ChCheck(msg) then
+if text ==('تنزيل رتبة') and ChCheck(msg) then
 function prom_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,dp) 
 if dp.first_name_ == false then
@@ -5732,7 +5734,7 @@ return false
 end
 local Text = '₪╽قم باستعمال الازرار للتحكم العضو ⤶ ⤹\n₪╽العضو ⤶ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'zzzii')..')'
 inline = {
-{{text="رفع رتبه",callback_data=msg.sender_user_id_..":SetRtba:"..result.sender_user_id_},{text="تنزيل رتبه",callback_data=msg.sender_user_id_..":RemRtba:"..result.sender_user_id_}},
+{{text="رفع رتبة",callback_data=msg.sender_user_id_..":SetRtba:"..result.sender_user_id_},{text="تنزيل رتبة",callback_data=msg.sender_user_id_..":RemRtba:"..result.sender_user_id_}},
 {{text="كتم",callback_data=msg.sender_user_id_..":Mute:"..result.sender_user_id_},{text="الغاء كتم",callback_data=msg.sender_user_id_..":UnMute:"..result.sender_user_id_}},
 {{text="حظر",callback_data=msg.sender_user_id_..":Ban:"..result.sender_user_id_},{text="الغاء حظر",callback_data=msg.sender_user_id_..":UnBan:"..result.sender_user_id_}},
 {{text="تقيد",callback_data=msg.sender_user_id_..":Tked:"..result.sender_user_id_},{text="الغاء تقيد",callback_data=msg.sender_user_id_..":UnTked:"..result.sender_user_id_}},
@@ -10394,6 +10396,8 @@ local Text = [[
 ₪╽الفارسية بالطرد
 ₪╽البوتات بالطرد
 ₪╽البوتات بالتقيد
+₪╽قفل • فتح ⤶ التحقق
+₪╽تعطيل • تفعيل ⤶ التحقق
 • • • • • • ₪ • • • • • •
 ₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
@@ -10519,7 +10523,7 @@ local Text = [[
 ₪╽اعاده التثبيت
 ₪╽الغاء تثبيت الكل
 • • • • • • ₪ • • • • • •
-₪╽تغير رد + اسم الرتبه + النص ⤶ ⤹
+₪╽تغير رد + اسم الرتبة + النص ⤶ ⤹
 ₪╽المطور • منشئ الاساسي
 ₪╽المنشئ • المدير • الادمن
 ₪╽المميز • المنظف • العضو
