@@ -1283,7 +1283,7 @@ local Text = [[
 ₪╽م5 ⤶ اوامر المطورين
 ₪╽م6 ⤶ اوامر الاعضاء
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
@@ -1345,7 +1345,7 @@ local Text = [[
 ₪╽البوتات بالطرد
 ₪╽البوتات بالتقيد
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1415,7 +1415,7 @@ local Text = [[
 ₪╽تقييد يوم + عدد الايام
 ₪╽الغاء تقييد ⤶ لالغاء التقييد بالوقت
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1474,7 +1474,7 @@ local Text = [[
 ₪╽ردود المدير • ردود المطور • التحقق
 ₪╽ضافني • حساب العمر • الزخرفه • غنيلي
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1527,7 +1527,7 @@ local Text = [[
 ₪╽المنشئين الاساسيين 
 ₪╽حذف جميع الرتب
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1607,7 +1607,7 @@ local Text = [[
 ₪╽ترحيب البوت • المغادره
 ₪╽البوت الخدمي • التواصل
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1649,7 +1649,7 @@ local Text = [[
 ₪╽تحويل + بالرد ⤶ صوره • ملصق • صوت • بصمه
 ₪╽انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -4253,7 +4253,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1,[[
 • • • • • • ₪ • • • • • •
 ₪╽نقاطي • بيع نقاطي
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]], 1, 'md')
 else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽عذرا الالعاب معطله في المجموعة', 1, 'md')
@@ -4454,10 +4454,10 @@ Welcome To Source
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '⌔ Source Channel',url="https://t.me/yousef_labban1"}},
-{{text = '⌔ Developer',url="t.me/sSs_sSs"},{text = '⌔ Tws ZOLARS',url="https://t.me/sSs_sSs"}},{{text= '⌔ Support Source .',url="https://t.me/LaRiCaTeam"}}
+{{text = '⌔ Developer',url="t.me/yousef_labban"},{text = '⌔ Tws ZOLARS',url="https://t.me/yousef_labban"}},{{text= '⌔ Support Source .',url="https://t.me/LaRiCaTeam"}}
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/zzzii&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/yousef_labban1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 --     Source dev-yousef     --
@@ -4632,11 +4632,11 @@ end,nil)
 end,nil)
 end 
 if text == "مبرمج السورس" or text == "مطور السورس" or text == "المبرمج" then 
-Text = "• *The developer and programmer of this source is* : [MaLaTH Al DleM](https://t.me/sSs_sSs)."
+Text = "• *The developer and programmer of this source is* : [MaLaTH Al DleM](https://t.me/yousef_labban)."
 keyboard = {} 
-keyboard.inline_keyboard = {{{text='- 𝗆𝖺𝗅𝖺𝗍𝗁 𝖺𝗅 𝖽𝗅𝖾𝗆 .',url="t.me/sSs_sSs"}}}
+keyboard.inline_keyboard = {{{text='- 𝗆𝖺𝗅𝖺𝗍𝗁 𝖺𝗅 𝖽𝗅𝖾𝗆 .',url="t.me/yousef_labban"}}}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo=https://t.me/sSs_sSs&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo=https://t.me/yousef_labban&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 --     Source dev-yousef     --
@@ -8917,7 +8917,7 @@ local TXTE = "₪╽اعدادات المجموعة ⤶ ⤹\n• • • • •
 .."₪╽التكرار ⤶ "..flood.."\n"
 .."₪╽عدد التكرار ⤶ "..Flood_Num.."\n"
 .."₪╽عدد السبام ⤶ "..spam_c.."\n"
-.."• • • • • • ₪ • • • • • •\n₪╽[Source Channel](https://t.me/zzzii)\n"
+.."• • • • • • ₪ • • • • • •\n₪╽[Source Channel](https://t.me/yousef_labban1)\n"
 Dev_Abs(msg.chat_id_, msg.id_, 1, TXTE, 1, 'md')
 end
 end
@@ -10324,7 +10324,7 @@ local Text = [[
 ₪╽م5 ⤶ اوامر المطورين
 ₪╽م6 ⤶ اوامر الاعضاء
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..msg.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..msg.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..msg.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
@@ -10395,7 +10395,7 @@ local Text = [[
 ₪╽البوتات بالطرد
 ₪╽البوتات بالتقيد
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10471,7 +10471,7 @@ local Text = [[
 ₪╽تقييد يوم + عدد الايام
 ₪╽الغاء تقييد ⤶ لالغاء التقييد بالوقت
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10536,7 +10536,7 @@ local Text = [[
 ₪╽ردود المدير • ردود المطور • التحقق
 ₪╽ضافني • حساب العمر • الزخرفه • غنيلي
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10595,7 +10595,7 @@ local Text = [[
 ₪╽المنشئين الاساسيين 
 ₪╽حذف جميع الرتب
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10681,7 +10681,7 @@ local Text = [[
 ₪╽ترحيب البوت • المغادره
 ₪╽البوت الخدمي • التواصل
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10729,7 +10729,7 @@ local Text = [[
 ₪╽تحويل + بالرد ⤶ صوره • ملصق • صوت • بصمه
 ₪╽انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 • • • • • • ₪ • • • • • •
-₪╽[Source Channel](https://t.me/zzzii)
+₪╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end
