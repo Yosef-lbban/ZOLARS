@@ -4449,11 +4449,11 @@ end
 if text == "السورس" or text == "سورس" then
 Text = [[
 Welcome To Source
-𓄇[˛ ch.](https://t.me/yousef_labban1)
+𓄇[˛ ch .](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⌔ Source Channel',url="https://t.me/zzzii"}},
+{{text = '⌔ Source Channel',url="https://t.me/yousef_labban1"}},
 {{text = '⌔ Developer',url="t.me/sSs_sSs"},{text = '⌔ Tws ZOLARS',url="https://t.me/sSs_sSs"}},{{text= '⌔ Support Source .',url="https://t.me/LaRiCaTeam"}}
 }
 local msg_id = msg.id_/2097152/0.5
