@@ -4400,7 +4400,7 @@ absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(
 end
 return false  
 end
-if text == "حذف قناة الاشتراك" or text == "حذف قناه الاشتراك" then
+if text == "حذف قناة الاشتراك" or text == "حذف قناة الاشتراك" then
 if not SecondSudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽للمطور الاساسي فقط ', 1, 'md')
 else
@@ -10935,7 +10935,7 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽لم يتم تعيين قناة الاشتراك الاجباري \n₪╽ارسل ⤶ تعيين قناة الاشتراك للتعيين ', 1, 'md')
 end end end end
 --     Source dev-yousef     --
-if text == 'القناة' or text == 'قناة السورس' or text == 'قناه السورس' or text == 'قنات السورس' then 
+if text == 'القناة' or text == 'قناة السورس' or text == 'قناة السورس' or text == 'قنات السورس' then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽Channel ↬ [@yousef_labban1]', 1, 'md')    
 end 
 --     Source dev-yousef     --
