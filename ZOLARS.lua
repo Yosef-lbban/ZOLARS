@@ -1322,7 +1322,7 @@ local Text = [[
 ₪╽قفل • فتح ⤶ التعديل
 ₪╽قفل • فتح ⤶ التثبيت
 ₪╽قفل • فتح ⤶ الاشعارات
-₪╽قفل • فتح ⤶ الكلايش
+₪╽قفل • فتح ⤶ المنشورات
 ₪╽قفل • فتح ⤶ الدخول
 ₪╽قفل • فتح ⤶ الشبكات
 ₪╽قفل • فتح ⤶ المواقع
@@ -8139,12 +8139,12 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الصور بالفعل مقفله في المجموعة', 1, 'md')
 end
 end
-if LockText[2] == "الكلايش" then
+if LockText[2] == "المنشورات" then
 if not DevAbs:get(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم قفل الكلايش")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم قفل المنشورات")  
 DevAbs:set(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الكلايش بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽المنشورات بالفعل مقفله في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الدخول" then
@@ -8313,12 +8313,12 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الصور بالفعل مفتوحه في المجموعة', 1, 'md')
 end
 end
-if UnLockText[2] == "الكلايش" then
+if UnLockText[2] == "المنشورات" then
 if DevAbs:get(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم فتح الكلايش")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم فتح المنشورات")  
 DevAbs:del(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الكلايش بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽المنشورات بالفعل مفتوحه في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الدخول" then
@@ -8904,7 +8904,7 @@ local TXTE = "₪╽اعدادات المجموعة ⤶ ⤹\n• • • • •
 .."₪╽التعديل ⤶ "..mute_edit.."\n"
 .."₪╽التثبيت ⤶ "..lock_pin.."\n"
 .."₪╽الاشعارات ⤶ "..lock_tgservice.."\n"
-.."₪╽الكلايش ⤶ "..lock_spam.."\n"
+.."₪╽المنشورات ⤶ "..lock_spam.."\n"
 .."₪╽الدخول ⤶ "..lock_Join.."\n"
 .."₪╽الشبكات ⤶ "..lock_wp.."\n"
 .."₪╽المواقع ⤶ "..lock_location.."\n"
@@ -9230,7 +9230,7 @@ if text == "الهاشتاك" then if DevAbs:get(ZOLARS..'Abs:Lock:Hashtak'..msg
 if text == "التعديل" then if DevAbs:get(ZOLARS..'Abs:Lock:EditMsgs'..msg.chat_id_) then mute_edit = 'مقفل' else mute_edit = 'مفتوح' end local ZOLARSTEAM = "\n" .."₪╽التعديل ⤶ "..mute_edit.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "التثبيت" then if DevAbs:get(ZOLARS..'Abs:Lock:Pin'..msg.chat_id_) then lock_pin = 'مقفل' else lock_pin = 'مفتوح' end local ZOLARSTEAM = "\n" .."₪╽التثبيت ⤶ "..lock_pin.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الاشعارات" then if DevAbs:get(ZOLARS..'Abs:Lock:TagServr'..msg.chat_id_) then lock_tgservice = 'مقفوله' else lock_tgservice = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽الاشعارات ⤶ "..lock_tgservice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الكلايش" then if DevAbs:get(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_) then lock_spam = 'مقفوله' else lock_spam = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽الكلايش ⤶ "..lock_spam.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "المنشورات" then if DevAbs:get(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_) then lock_spam = 'مقفوله' else lock_spam = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽المنشورات ⤶ "..lock_spam.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الدخول" then if DevAbs:get(ZOLARS..'Abs:Lock:Join'..msg.chat_id_) then lock_Join = 'مقفول' else lock_Join = 'مفتوح' end local ZOLARSTEAM = "\n" .."₪╽الدخول ⤶ "..lock_Join.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الشبكات" then if DevAbs:get(ZOLARS..'Abs:Lock:WebLinks'..msg.chat_id_) then lock_wp = 'مقفوله' else lock_wp = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽الشبكات ⤶ "..lock_wp.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "المواقع" then if DevAbs:get(ZOLARS..'Abs:Lock:Location'..msg.chat_id_) then lock_location = 'مقفوله' else lock_location = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽المواقع ⤶ "..lock_location.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
@@ -10297,7 +10297,7 @@ HelpList ={'Abs:Help','Abs:Help1','Abs:Help2','Abs:Help3','Abs:Help4','Abs:Help5
 for i,Help in pairs(HelpList) do
 DevAbs:del(ZOLARS..Help) 
 end
-Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽تم استعادة الكلايش الاصليه" ,  1, "md") 
+Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽تم استعادة المنشورات الاصليه" ,  1, "md") 
 end
 if text == "تعيين الاوامر" and SecondSudo(msg) or text == "تعيين امر الاوامر" and SecondSudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "₪╽ارسل كليشة (الاوامر) الان " ,  1, "md")
@@ -10372,7 +10372,7 @@ local Text = [[
 ₪╽قفل • فتح ⤶ التعديل
 ₪╽قفل • فتح ⤶ التثبيت
 ₪╽قفل • فتح ⤶ الاشعارات
-₪╽قفل • فتح ⤶ الكلايش
+₪╽قفل • فتح ⤶ المنشورات
 ₪╽قفل • فتح ⤶ الدخول
 ₪╽قفل • فتح ⤶ الشبكات
 ₪╽قفل • فتح ⤶ المواقع
