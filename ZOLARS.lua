@@ -1328,7 +1328,7 @@ local Text = [[
 ₪╽قفل • فتح ⤶ المواقع
 ₪╽قفل • فتح ⤶ السب
 ₪╽قفل • فتح ⤶ الكفر
-₪╽قفل • فتح ⤶ الطائفيه
+₪╽قفل • فتح ⤶ الطائفية
 ₪╽قفل • فتح ⤶ الكل
 ₪╽قفل • فتح ⤶ العربية
 ₪╽قفل • فتح ⤶ الانكليزيه
@@ -3359,7 +3359,7 @@ end end
 if text and (text:match("سني نكس") or text:match("شيعه") or text:match("الشيعه") or text:match("السنه") or text:match("طائفتكم") or text:match("شيعي") or text:match("انا سني") or text:match("مسيحي") or text:match("يهودي") or text:match("صابئي") or text:match("ملحد") or text:match("بالسنه") or text:match("شيعة")) then
 if not DevAbs:get(ZOLARS.."Abs:Lock:Taf"..msg.chat_id_) and not VipMem(msg) then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
-ReplyStatus(msg,msg.sender_user_id_,"WrongWay","₪╽ممنوع التكلم بالطائفيه هنا") 
+ReplyStatus(msg,msg.sender_user_id_,"WrongWay","₪╽ممنوع التكلم بالطائفية هنا") 
 end end
 --     Source dev-yousef     --
 if SecondSudo(msg) then
@@ -7614,12 +7614,12 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽السب بالفعل مقفل في المجموعة', 1, 'md')
 end
 end
-if LockText[2] == "الطائفيه" then
+if LockText[2] == "الطائفية" then
 if DevAbs:get(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم قفل الطائفيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم قفل الطائفية")  
 DevAbs:del(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الطائفيه بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الطائفية بالفعل مقفله في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الكفر" then
@@ -8068,12 +8068,12 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽السب بالفعل مفتوح في المجموعة', 1, 'md')
 end
 end
-if UnLockText[2] == "الطائفيه" then
+if UnLockText[2] == "الطائفية" then
 if not DevAbs:get(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم فتح الطائفيه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","₪╽تم فتح الطائفية")  
 DevAbs:set(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الطائفيه بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '₪╽الطائفية بالفعل مفتوحه في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الكفر" then
@@ -8910,7 +8910,7 @@ local TXTE = "₪╽اعدادات المجموعة ⤶ ⤹\n• • • • •
 .."₪╽المواقع ⤶ "..lock_location.."\n"
 .."₪╽السب ⤶ "..lock_fshar.."\n"
 .."₪╽الكفر ⤶ "..lock_kaf.."\n"
-.."₪╽الطائفيه ⤶ "..lock_taf.."\n"
+.."₪╽الطائفية ⤶ "..lock_taf.."\n"
 .."₪╽العربية ⤶ "..lock_arabic.."\n"
 .."₪╽الانكليزيه ⤶ "..lock_english.."\n"
 .."₪╽الفارسية ⤶ "..lock_farsi.."\n"
@@ -9238,7 +9238,7 @@ if text == "العربية" then if DevAbs:get(ZOLARS..'Abs:Lock:Arabic'..msg.ch
 if text == "الانكليزيه" then if DevAbs:get(ZOLARS..'Abs:Lock:English'..msg.chat_id_) then lock_english = 'مقفوله' else lock_english = 'مفتوحه' end local ZOLARSTEAM = "\n" .."₪╽الانكليزيه ⤶ "..lock_english.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الكفر" then if DevAbs:get(ZOLARS..'Abs:Lock:Kfr'..msg.chat_id_) then lock_kaf = 'مفتوح' else lock_kaf = 'مقفل' end local ZOLARSTEAM = "\n" .."₪╽الكفر ⤶ "..lock_kaf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "السب" then if DevAbs:get(ZOLARS..'Abs:Lock:Fshar'..msg.chat_id_) then lock_fshar = 'مفتوح' else lock_fshar = 'مقفل' end local ZOLARSTEAM = "\n" .."₪╽السب ⤶ "..lock_fshar.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الطائفيه" then if DevAbs:get(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحه' else lock_taf = 'مقفله' end local ZOLARSTEAM = "\n" .."₪╽الطائفيه ⤶ "..lock_taf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الطائفية" then if DevAbs:get(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحه' else lock_taf = 'مقفله' end local ZOLARSTEAM = "\n" .."₪╽الطائفية ⤶ "..lock_taf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 end
 --     Source dev-yousef     --
 if text == 'تفعيل كشف الاعدادات' and ChCheck(msg) then 
@@ -10378,7 +10378,7 @@ local Text = [[
 ₪╽قفل • فتح ⤶ المواقع
 ₪╽قفل • فتح ⤶ السب
 ₪╽قفل • فتح ⤶ الكفر
-₪╽قفل • فتح ⤶ الطائفيه
+₪╽قفل • فتح ⤶ الطائفية
 ₪╽قفل • فتح ⤶ الكل
 ₪╽قفل • فتح ⤶ العربية
 ₪╽قفل • فتح ⤶ الانكليزيه
