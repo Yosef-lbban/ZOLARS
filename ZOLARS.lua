@@ -4449,7 +4449,7 @@ end
 if text == "السورس" or text == "سورس" then
 Text = [[
 Welcome To Source
-𓄇[˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🦇.](https://t.me/zzzii)
+𓄇[˛ ch.](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
