@@ -1243,7 +1243,7 @@ if DataText and DataText:match('/EndRedod:'..tonumber(data.sender_user_id_)..'(.
 local Abbs = DataText:match('/EndRedod:'..tonumber(data.sender_user_id_)..'(.*)')
 local List = DevAbs:smembers(ZOLARS..'Abs:Text:GpTexts'..Abbs..data.chat_id_)
 if DevAbs:get(ZOLARS..'Abs:Add:GpRedod'..data.sender_user_id_..data.chat_id_) then
-EditMsg(Chat_Id2, Msg_Id2, "🇸🇦╽تم انهاء وحفظ ⤶ "..#List.." من الردود المتعدده للامر ⤶ "..Abbs) 
+EditMsg(Chat_Id2, Msg_Id2, "🇸🇦╽تم انهاء وحفظ ⤶ "..#List.." من الردود المتعددة للامر ⤶ "..Abbs) 
 DevAbs:del(ZOLARS..'Abs:Add:GpRedod'..data.sender_user_id_..data.chat_id_)
 else
 EditMsg(Chat_Id2, Msg_Id2, "🇸🇦╽عذرا صلاحية الامر منتهيه !") 
@@ -1252,7 +1252,7 @@ end
 if DataText and DataText:match('/DelRedod:'..tonumber(data.sender_user_id_)..'(.*)') then
 local Abbs = DataText:match('/DelRedod:'..tonumber(data.sender_user_id_)..'(.*)')
 if DevAbs:get(ZOLARS..'Abs:Add:GpRedod'..data.sender_user_id_..data.chat_id_) then
-EditMsg(Chat_Id2, Msg_Id2, "🇸🇦╽تم الغاء عملية حفظ الردود المتعدده للامر ⤶ "..Abbs) 
+EditMsg(Chat_Id2, Msg_Id2, "🇸🇦╽تم الغاء عملية حفظ الردود المتعددة للامر ⤶ "..Abbs) 
 DevAbs:del(ZOLARS..'Abs:Add:GpRedod'..data.sender_user_id_..data.chat_id_)
 DevAbs:del(ZOLARS..'Abs:Text:GpTexts'..Abbs..data.chat_id_)
 DevAbs:del(ZOLARS..'Abs:Add:GpTexts'..data.sender_user_id_..data.chat_id_)
@@ -1305,7 +1305,7 @@ local Text = [[
 🇸🇦╽قفل • فتح ⤶ الروابط
 🇸🇦╽قفل • فتح ⤶ المعرفات
 🇸🇦╽قفل • فتح ⤶ البوتات
-🇸🇦╽قفل • فتح ⤶ المتحركه
+🇸🇦╽قفل • فتح ⤶ المتحركة
 🇸🇦╽قفل • فتح ⤶ الملصقات
 🇸🇦╽قفل • فتح ⤶ الملفات
 🇸🇦╽قفل • فتح ⤶ الصور
@@ -1443,10 +1443,10 @@ local Text = [[
 🇸🇦╽حذف ردود المدير
 🇸🇦╽اضف • حذف ⤶ رد متعدد
 🇸🇦╽حذف رد من متعدد
-🇸🇦╽الردود المتعدده
-🇸🇦╽حذف الردود المتعدده
+🇸🇦╽الردود المتعددة
+🇸🇦╽حذف الردود المتعددة
 🇸🇦╽حذف قوائم المنع
-🇸🇦╽منع ⤶ بالرد على ( ملصق • صورة • متحركه )
+🇸🇦╽منع ⤶ بالرد على ( ملصق • صورة • متحركة )
 🇸🇦╽حذف قائمه منع + ⤶ ⤹
 ( الصور • المتحركات • الملصقات )
 • • • • • • ₪ • • • • • •
@@ -2062,7 +2062,7 @@ sendPhoto(id_user, msg.id_, 0, 1,nil, msg.content_.photo_.sizes_[0].photo_.persi
 Text = '🇸🇦╽تم ارسال الصورة الى ⤶ ⤹'
 elseif msg.content_.ID == 'MessageAnimation' then    
 sendDocument(id_user, msg.id_, 0, 1,nil, msg.content_.animation_.animation_.persistent_id_)    
-Text = '🇸🇦╽تم ارسال المتحركه الى ⤶ ⤹'
+Text = '🇸🇦╽تم ارسال المتحركة الى ⤶ ⤹'
 elseif msg.content_.ID == 'MessageVoice' then    
 sendVoice(id_user, msg.id_, 0, 1,nil, msg.content_.voice_.voice_.persistent_id_)    
 Text = '🇸🇦╽تم ارسال البصمه الى ⤶ ⤹'
@@ -2371,7 +2371,7 @@ if not Manager(msg) then
 local filter = DevAbs:smembers(ZOLARS.."Abs:FilterAnimation"..msg.chat_id_)
 for k,v in pairs(filter) do
 if v == msg.content_.animation_.animation_.persistent_id_ then
-ReplyStatus(msg,msg.sender_user_id_,"WrongWay","🇸🇦╽المتحركه التي ارسلتها تم منعها من المجموعة")  
+ReplyStatus(msg,msg.sender_user_id_,"WrongWay","🇸🇦╽المتحركة التي ارسلتها تم منعها من المجموعة")  
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
 return false   
 end
@@ -2452,7 +2452,7 @@ if SaveGpRedod == 'SaveGpRedod' then
 local GetGpTexts = DevAbs:get(ZOLARS..'Abs:Add:GpTexts'..msg.sender_user_id_..msg.chat_id_)
 local List = DevAbs:smembers(ZOLARS..'Abs:Text:GpTexts'..GetGpTexts..msg.chat_id_)
 if text == "الغاء" then 
-Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽🇸🇦╽تم الغاء عملية حفظ الردود المتعدده للامر ⤶ "..GetGpTexts ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽🇸🇦╽تم الغاء عملية حفظ الردود المتعددة للامر ⤶ "..GetGpTexts ,  1, "md")
 DevAbs:del(ZOLARS..'Abs:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 DevAbs:del(ZOLARS..'Abs:Text:GpTexts'..GetGpTexts..msg.chat_id_)
 DevAbs:del(ZOLARS..'Abs:Add:GpTexts'..msg.sender_user_id_..msg.chat_id_)
@@ -2462,7 +2462,7 @@ end
 Text = text:gsub('"',""):gsub('"',""):gsub("`",""):gsub("*","")
 DevAbs:sadd(ZOLARS..'Abs:Text:GpTexts'..GetGpTexts..msg.chat_id_,Text)
 if #List == 4 then 
-Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽تم حفظ ⤶ 5 من الردود المتعدده للامر ⤶ "..GetGpTexts ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽تم حفظ ⤶ 5 من الردود المتعددة للامر ⤶ "..GetGpTexts ,  1, "md")
 DevAbs:del(ZOLARS..'Abs:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_)
 return false
 end
@@ -6988,7 +6988,7 @@ end
 if result.content_.animation_ then
 local idanimation = result.content_.animation_.animation_.persistent_id_
 DevAbs:sadd(ZOLARS.."Abs:FilterAnimation"..msg.chat_id_,idanimation)
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم منع المتحركه بنجاح لن يتم ارسالها مجددا', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم منع المتحركة بنجاح لن يتم ارسالها مجددا', 1, 'md')
 return false
 end
 end
@@ -7012,7 +7012,7 @@ end
 if result.content_.animation_.animation_ then
 local idanimation = result.content_.animation_.animation_.persistent_id_
 DevAbs:srem(ZOLARS.."Abs:FilterAnimation"..msg.chat_id_,idanimation)
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم الغاء منع المتحركه يمكنهم ارسالها الان', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم الغاء منع المتحركة يمكنهم ارسالها الان', 1, 'md')
 return false
 end
 end
@@ -8165,12 +8165,12 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الفيديو بالفعل مقفل في المجموعة', 1, 'md')
 end
 end
-if LockText[2] == "المتحركه" then
+if LockText[2] == "المتحركة" then
 if not DevAbs:get(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل المتحركه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل المتحركة")  
 DevAbs:set(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المتحركه بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المتحركة بالفعل مقفله في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الاغاني" then
@@ -8363,12 +8363,12 @@ else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الماركداون بالفعل مفتوحه في المجموعة', 1, 'md')
 end
 end
-if UnLockText[2] == "المتحركه" then
+if UnLockText[2] == "المتحركة" then
 if DevAbs:get(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_) then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح المتحركه")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح المتحركة")  
 DevAbs:del(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المتحركه بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المتحركة بالفعل مفتوحه في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الاغاني" then
@@ -8890,7 +8890,7 @@ local TXTE = "🇸🇦╽اعدادات المجموعة ⤶ ⤹\n• • • �
 .."🇸🇦╽الروابط ⤶ "..mute_links.."\n"
 .."🇸🇦╽المعرف ⤶ "..lock_tag.."\n"
 .."🇸🇦╽البوتات ⤶ "..lock_bots.."\n"
-.."🇸🇦╽المتحركه ⤶ "..mute_gifs.."\n"
+.."🇸🇦╽المتحركة ⤶ "..mute_gifs.."\n"
 .."🇸🇦╽الملصقات ⤶ "..lock_sticker.."\n"
 .."🇸🇦╽الملفات ⤶ "..lock_file.."\n"
 .."🇸🇦╽الصور ⤶ "..mute_photo.."\n"
@@ -9217,7 +9217,7 @@ if Admin(msg) then
 if DevAbs:get(ZOLARS..'Abs:LockSettings'..msg.chat_id_) then 
 if text == "الروابط" then if DevAbs:get(ZOLARS..'Abs:Lock:Links'..msg.chat_id_) then mute_links = 'مقفله' else mute_links = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الروابط ⤶ "..mute_links.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "المعرف" or text == "المعرفات" then if DevAbs:get(ZOLARS..'Abs:Lock:Tags'..msg.chat_id_) then lock_tag = 'مقفوله' else lock_tag = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽المعرف ⤶ "..lock_tag.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "المتحركه" or text == "الملصقات المتحركه" then if DevAbs:get(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_) then mute_gifs = 'مقفوله' else mute_gifs = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽المتحركه ⤶ "..mute_gifs.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "المتحركة" or text == "الملصقات المتحركة" then if DevAbs:get(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_) then mute_gifs = 'مقفوله' else mute_gifs = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽المتحركة ⤶ "..mute_gifs.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الملصقات" then if DevAbs:get(ZOLARS..'Abs:Lock:Stickers'..msg.chat_id_) then lock_sticker = 'مقفوله' else lock_sticker = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الملصقات ⤶ "..lock_sticker.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الصور" then if DevAbs:get(ZOLARS..'Abs:Lock:Photo'..msg.chat_id_) then mute_photo = 'مقفوله' else mute_photo = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الصور ⤶ "..mute_photo.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الفيديو" or text == "الفيديوهات" then if DevAbs:get(ZOLARS..'Abs:Lock:Videos'..msg.chat_id_) then mute_video = 'مقفوله' else mute_video = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الفيديو ⤶ "..mute_video.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
@@ -9772,7 +9772,7 @@ send(msg.chat_id_, msg.id_,"🇸🇦╽الاذاعه معطله من قبل ا�
 return false
 end
 DevAbs:setex(ZOLARS.."Abs:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local ZOLARSTEAM = '🇸🇦╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n🇸🇦╽ارسل لي سواء ⤶ ⤹ \n❨ ملف • ملصق • متحركه • صورة\n • فيديو • بصمه • صوت • رساله ❩\n🇸🇦╽للخروج ارسل ⤶ ( الغاء ) \n ✓'
+local ZOLARSTEAM = '🇸🇦╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n🇸🇦╽ارسل لي سواء ⤶ ⤹ \n❨ ملف • ملصق • متحركة • صورة\n • فيديو • بصمه • صوت • رساله ❩\n🇸🇦╽للخروج ارسل ⤶ ( الغاء ) \n ✓'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -9800,7 +9800,7 @@ sendPhoto(v, 0, 0, 1, nil, photo,(msg.content_.caption_ or ''))
 end 
 elseif msg.content_.animation_ then
 for k,v in pairs(List) do 
-AbsText = "المتحركه"
+AbsText = "المتحركة"
 sendDocument(v, 0, 0, 1,nil, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ''))    
 end 
 elseif msg.content_.video_ then
@@ -9839,7 +9839,7 @@ send(msg.chat_id_, msg.id_,"🇸🇦╽الاذاعه معطله من قبل ا�
 return false
 end
 DevAbs:setex(ZOLARS.."Abs:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local ZOLARSTEAM = '🇸🇦╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n🇸🇦╽ارسل لي سواء ⤶ ⤹ \n❨ ملف • ملصق • متحركه • صورة\n • فيديو • بصمه • صوت • رساله ❩\n🇸🇦╽للخروج ارسل ⤶ ( الغاء ) \n ✓'
+local ZOLARSTEAM = '🇸🇦╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n🇸🇦╽ارسل لي سواء ⤶ ⤹ \n❨ ملف • ملصق • متحركة • صورة\n • فيديو • بصمه • صوت • رساله ❩\n🇸🇦╽للخروج ارسل ⤶ ( الغاء ) \n ✓'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -9867,7 +9867,7 @@ sendPhoto(v, 0, 0, 1, nil, photo,(msg.content_.caption_ or ''))
 end 
 elseif msg.content_.animation_ then
 for k,v in pairs(List) do 
-AbsText = "المتحركه"
+AbsText = "المتحركة"
 sendDocument(v, 0, 0, 1,nil, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ''))    
 end 
 elseif msg.content_.video_ then
@@ -9954,7 +9954,7 @@ send(msg.chat_id_, msg.id_,"🇸🇦╽الاذاعه معطله من قبل ا�
 return false
 end
 DevAbs:setex(ZOLARS.."Abs:Send:Gp:Pin"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local ZOLARSTEAM = '🇸🇦╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n🇸🇦╽ارسل لي سواء ⤶ ⤹ \n❨ ملف • ملصق • متحركه • صورة\n • فيديو • بصمه • صوت • رساله ❩\n🇸🇦╽للخروج ارسل ⤶ ( الغاء ) \n ✓'
+local ZOLARSTEAM = '🇸🇦╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n🇸🇦╽ارسل لي سواء ⤶ ⤹ \n❨ ملف • ملصق • متحركة • صورة\n • فيديو • بصمه • صوت • رساله ❩\n🇸🇦╽للخروج ارسل ⤶ ( الغاء ) \n ✓'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -9984,7 +9984,7 @@ DevAbs:set(ZOLARS..'Abs:PinnedMsgs'..v,photo)
 end 
 elseif msg.content_.animation_ then
 for k,v in pairs(List) do 
-AbsText = "المتحركه"
+AbsText = "المتحركة"
 sendDocument(v, 0, 0, 1,nil, msg.content_.animation_.animation_.persistent_id_,(msg.content_.caption_ or ''))    
 DevAbs:set(ZOLARS..'Abs:PinnedMsgs'..v,msg.content_.animation_.animation_.persistent_id_)
 end 
@@ -10027,7 +10027,7 @@ end
 if text == 'حذف رد من متعدد' and Manager(msg) and ChCheck(msg) or text == 'مسح رد من متعدد' and Manager(msg) and ChCheck(msg) then
 local List = DevAbs:smembers(ZOLARS..'Abs:Manager:GpRedod'..msg.chat_id_)
 if #List == 0 then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽لا توجد ردود متعدده مضافة" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽لا توجد ردود متعددة مضافة" ,  1, "md")
 return false
 end
 DevAbs:set(ZOLARS..'Abs:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_,'DelGpRedRedod')
@@ -10054,7 +10054,7 @@ end end
 if text == 'حذف رد متعدد' and Manager(msg) and ChCheck(msg) or text == 'مسح رد متعدد' and Manager(msg) and ChCheck(msg) then
 local List = DevAbs:smembers(ZOLARS..'Abs:Manager:GpRedod'..msg.chat_id_)
 if #List == 0 then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽لا توجد ردود متعدده مضافة" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽لا توجد ردود متعددة مضافة" ,  1, "md")
 return false
 end
 DevAbs:set(ZOLARS..'Abs:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_,'DelGpRedod')
@@ -10113,7 +10113,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽تم الغاء الامر" ,  1, 
 DevAbs:del(ZOLARS..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
 return false
 end
-Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽ارسل لي الرد سواء كان ⤶ ⤹\n❨ ملف • ملصق • متحركه • صورة\n • فيديو • بصمه • صوت • رساله ❩\n🇸🇦╽يمكنك اضافة الى النص ⤶ ⤹\n• • • • • • ₪ • • • • • •\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n• • • • • • ₪ • • • • • •\n🇸🇦╽للخروج ارسل ⤶ ( الغاء )\n ✓" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽ارسل لي الرد سواء كان ⤶ ⤹\n❨ ملف • ملصق • متحركة • صورة\n • فيديو • بصمه • صوت • رساله ❩\n🇸🇦╽يمكنك اضافة الى النص ⤶ ⤹\n• • • • • • ₪ • • • • • •\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n• • • • • • ₪ • • • • • •\n🇸🇦╽للخروج ارسل ⤶ ( الغاء )\n ✓" ,  1, "md")
 DevAbs:set(ZOLARS..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_,'SaveGpRed')
 DevAbs:set(ZOLARS..'Abs:Add:GpText'..msg.sender_user_id_..msg.chat_id_,text)
 DevAbs:sadd(ZOLARS..'Abs:Manager:GpRed'..msg.chat_id_,text)
@@ -10144,7 +10144,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽تم الغاء الامر" ,  1, 
 DevAbs:del(ZOLARS..'Abs:Add:AllRed'..msg.sender_user_id_)
 return false
 end
-Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽ارسل لي الرد سواء كان ⤶ ⤹\n❨ ملف • ملصق • متحركه • صورة\n • فيديو • بصمه • صوت • رساله ❩\n🇸🇦╽يمكنك اضافة الى النص ⤶ ⤹\n• • • • • • ₪ • • • • • •\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n• • • • • • ₪ • • • • • •\n🇸🇦╽للخروج ارسل ⤶ ( الغاء )\n ✓" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽ارسل لي الرد سواء كان ⤶ ⤹\n❨ ملف • ملصق • متحركة • صورة\n • فيديو • بصمه • صوت • رساله ❩\n🇸🇦╽يمكنك اضافة الى النص ⤶ ⤹\n• • • • • • ₪ • • • • • •\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n• • • • • • ₪ • • • • • •\n🇸🇦╽للخروج ارسل ⤶ ( الغاء )\n ✓" ,  1, "md")
 DevAbs:set(ZOLARS.."Abs:Add:AllRed"..msg.sender_user_id_,'SaveAllRed')
 DevAbs:set(ZOLARS.."Abs:Add:AllText"..msg.sender_user_id_, text)
 DevAbs:sadd(ZOLARS.."Abs:Sudo:AllRed",text)
@@ -10152,27 +10152,27 @@ DevAbs:set(ZOLARS.."DelSudoRep",text)
 return false 
 end end
 --     Source dev-yousef     --
-if text == 'الردود المتعدده' and Manager(msg) and ChCheck(msg) then
+if text == 'الردود المتعددة' and Manager(msg) and ChCheck(msg) then
 local redod = DevAbs:smembers(ZOLARS..'Abs:Manager:GpRedod'..msg.chat_id_)
-MsgRep = '🇸🇦╽قائمة الردود المتعدده ⤶ ⤹ \n• • • • • • ₪ • • • • • •\n'
+MsgRep = '🇸🇦╽قائمة الردود المتعددة ⤶ ⤹ \n• • • • • • ₪ • • • • • •\n'
 for k,v in pairs(redod) do
 MsgRep = MsgRep..k..'~ (`'..v..'`) • {*العدد ⤶ '..#DevAbs:smembers(ZOLARS..'Abs:Text:GpTexts'..v..msg.chat_id_)..'*}\n' 
 end
 if #redod == 0 then
-MsgRep = '🇸🇦╽لا توجد ردود متعدده مضافة'
+MsgRep = '🇸🇦╽لا توجد ردود متعددة مضافة'
 end
 send(msg.chat_id_,msg.id_,MsgRep)
 end
-if text == 'حذف الردود المتعدده' and Manager(msg) and ChCheck(msg) or text == 'مسح الردود المتعدده' and Manager(msg) and ChCheck(msg) then
+if text == 'حذف الردود المتعددة' and Manager(msg) and ChCheck(msg) or text == 'مسح الردود المتعددة' and Manager(msg) and ChCheck(msg) then
 local redod = DevAbs:smembers(ZOLARS..'Abs:Manager:GpRedod'..msg.chat_id_)
 if #redod == 0 then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽لا توجد ردود متعدده مضافة" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽لا توجد ردود متعددة مضافة" ,  1, "md")
 else
 for k,v in pairs(redod) do
 DevAbs:del(ZOLARS..'Abs:Text:GpTexts'..v..msg.chat_id_)
 DevAbs:del(ZOLARS..'Abs:Manager:GpRedod'..msg.chat_id_)
 end
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم حذف الردود المتعدده")  
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم حذف الردود المتعددة")  
 return false
 end
 end
@@ -10182,7 +10182,7 @@ local redod = DevAbs:smembers(ZOLARS..'Abs:Manager:GpRed'..msg.chat_id_)
 MsgRep = '🇸🇦╽ردود المدير ⤶ ⤹ \n• • • • • • ₪ • • • • • •\n'
 for k,v in pairs(redod) do
 if DevAbs:get(ZOLARS.."Abs:Gif:GpRed"..v..msg.chat_id_) then
-dp = 'متحركه 🎭'
+dp = 'متحركة 🎭'
 elseif DevAbs:get(ZOLARS.."Abs:Voice:GpRed"..v..msg.chat_id_) then
 dp = 'بصمه 🎙'
 elseif DevAbs:get(ZOLARS.."Abs:Stecker:GpRed"..v..msg.chat_id_) then
@@ -10231,7 +10231,7 @@ local redod = DevAbs:smembers(ZOLARS.."Abs:Sudo:AllRed")
 MsgRep = '🇸🇦╽ردود المطور ⤶ ⤹ \n• • • • • • ₪ • • • • • •\n'
 for k,v in pairs(redod) do
 if DevAbs:get(ZOLARS.."Abs:Gif:AllRed"..v) then
-dp = 'متحركه 🎭'
+dp = 'متحركة 🎭'
 elseif DevAbs:get(ZOLARS.."Abs:Voice:AllRed"..v) then
 dp = 'بصمه 🎙'
 elseif DevAbs:get(ZOLARS.."Abs:Stecker:AllRed"..v) then
@@ -10357,7 +10357,7 @@ local Text = [[
 🇸🇦╽قفل • فتح ⤶ الروابط
 🇸🇦╽قفل • فتح ⤶ المعرفات
 🇸🇦╽قفل • فتح ⤶ البوتات
-🇸🇦╽قفل • فتح ⤶ المتحركه
+🇸🇦╽قفل • فتح ⤶ المتحركة
 🇸🇦╽قفل • فتح ⤶ الملصقات
 🇸🇦╽قفل • فتح ⤶ الملفات
 🇸🇦╽قفل • فتح ⤶ الصور
@@ -10509,10 +10509,10 @@ local Text = [[
 🇸🇦╽حذف ردود المدير
 🇸🇦╽اضف • حذف ⤶ رد متعدد
 🇸🇦╽حذف رد من متعدد
-🇸🇦╽الردود المتعدده
-🇸🇦╽حذف الردود المتعدده
+🇸🇦╽الردود المتعددة
+🇸🇦╽حذف الردود المتعددة
 🇸🇦╽حذف قوائم المنع
-🇸🇦╽منع ⤶ بالرد على ( ملصق • صورة • متحركه )
+🇸🇦╽منع ⤶ بالرد على ( ملصق • صورة • متحركة )
 🇸🇦╽حذف قائمه منع + ⤶ ⤹
 ( الصور • المتحركات • الملصقات )
 • • • • • • ₪ • • • • • •
@@ -10981,7 +10981,7 @@ elseif result.content_.ID == "MessageSticker" then Media = 'الملصق'
 elseif result.content_.ID == "MessageVoice" then Media = 'البصمه'
 elseif result.content_.ID == "MessageAudio" then Media = 'الصوت'
 elseif result.content_.ID == "MessageVideo" then Media = 'الفيديو'
-elseif result.content_.ID == "MessageAnimation" then Media = 'المتحركه'
+elseif result.content_.ID == "MessageAnimation" then Media = 'المتحركة'
 end
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,dp) 
 local absname = '🇸🇦╽العضو ⤶ ['..dp.first_name_..'](tg://user?id='..dp.id_..')'
