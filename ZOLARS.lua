@@ -4107,7 +4107,7 @@ name = string.gsub(name,'اسيا','🇸🇦╽تقع لبنان في قاره �
 name = string.gsub(name,'6','🇸🇦╽كم صفرا للمليون ؟\n1- 4\n2- 3\n3- 6')
 name = string.gsub(name,'الاسد','🇸🇦╽ماهو الحيوان الذي يلقب بملك الغابه ؟\n1- الفيل\n2- الاسد\n3- النمر')
 name = string.gsub(name,'مهر','🇸🇦╽ما اسم صغير الحصان ؟\n1- مهر\n2- جرو\n3- عجل')
-name = string.gsub(name,'الدولفين','🇸🇦╽ما الحيوان الذي ينام واحدى عينه مفتوحه ؟\n1- القرش\n2- الدولفين\n3- الثعلب\n')
+name = string.gsub(name,'الدولفين','🇸🇦╽ما الحيوان الذي ينام واحدى عينه مفتوحة ؟\n1- القرش\n2- الدولفين\n3- الثعلب\n')
 name = string.gsub(name,'اوروبا','🇸🇦╽ماهي القاره التي تلقب بالقاره العجوز ؟\n1- اوروبا\n2- امريكا الشماليه\n3- افريقيا')
 name = string.gsub(name,'الزئبق','🇸🇦╽ما اسم المعدن الموجود فيي الحاله السائله ؟\n1- النحاس\n2- الحديد\n3- الزئبق')
 name = string.gsub(name,'لندن','🇸🇦╽ماهي عاصمه انجلترا ؟\n1- لندن\n2- لفرسول\n3- تركيا')
@@ -7603,7 +7603,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Farsi'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الفارسية")  
 DevAbs:set(ZOLARS..'Abs:Lock:Farsi'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الفارسية بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الفارسية بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "السب" then
@@ -7619,7 +7619,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الطائفية")  
 DevAbs:del(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الطائفية بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الطائفية بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الكفر" then
@@ -7635,7 +7635,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:FarsiBan'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الفارسية بالطرد")  
 DevAbs:set(ZOLARS..'Abs:Lock:FarsiBan'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الفارسية بالطرد بالفعل مقفله ', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الفارسية بالطرد بالفعل مقفلة ', 1, 'md')
 end
 end
 if LockText[2] == "البوتات" or LockText[2] == "البوتات بالحذف" then
@@ -8057,7 +8057,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Farsi'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الفارسية")  
 DevAbs:del(ZOLARS..'Abs:Lock:Farsi'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الفارسية بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الفارسية بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "السب" then
@@ -8073,7 +8073,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الطائفية")  
 DevAbs:set(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الطائفية بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الطائفية بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الكفر" then
@@ -8089,7 +8089,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:FarsiBan'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الفارسية بالطرد")  
 DevAbs:del(ZOLARS..'Abs:Lock:FarsiBan'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الفارسية بالطرد بالفعل مفتوحه', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الفارسية بالطرد بالفعل مفتوحة', 1, 'md')
 end
 end
 if UnLockText[2] == "البوتات" or UnLockText[2] == "البوتات بالطرد" or UnLockText[2] == "البوتات بالتقييد" or UnLockText[2] == "البوتات بالتقيد" then
@@ -8120,7 +8120,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Text'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الالدردشة")  
 DevAbs:set(ZOLARS..'Abs:Lock:Text'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الالدردشة بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الالدردشة بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الاونلاين" then
@@ -8136,7 +8136,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Photo'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الصور")  
 DevAbs:set(ZOLARS..'Abs:Lock:Photo'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الصور بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الصور بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "المنشورات" then
@@ -8144,7 +8144,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل المنشورات")  
 DevAbs:set(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المنشورات بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المنشورات بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الدخول" then
@@ -8168,7 +8168,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل المتحركة")  
 DevAbs:set(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المتحركة بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المتحركة بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الاغاني" then
@@ -8176,7 +8176,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Music'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الاغاني")  
 DevAbs:set(ZOLARS..'Abs:Lock:Music'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الاغاني بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الاغاني بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الصوت" then
@@ -8192,7 +8192,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Links'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الروابط")  
 DevAbs:set(ZOLARS..'Abs:Lock:Links'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الروابط بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الروابط بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "المواقع" then
@@ -8200,7 +8200,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Location'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل المواقع")  
 DevAbs:set(ZOLARS..'Abs:Lock:Location'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المواقع بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المواقع بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "المعرف" or LockText[2] == "المعرفات" then
@@ -8208,7 +8208,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Tags'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل المعرفات")  
 DevAbs:set(ZOLARS..'Abs:Lock:Tags'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المعرفات بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المعرفات بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الملفات" then
@@ -8216,7 +8216,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Document'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الملفات")  
 DevAbs:set(ZOLARS..'Abs:Lock:Document'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الملفات بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الملفات بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الهاشتاك" or LockText[2] == "التاك" then
@@ -8232,7 +8232,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Contact'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الجهات")  
 DevAbs:set(ZOLARS..'Abs:Lock:Contact'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '️🇸🇦╽الجهات بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '️🇸🇦╽الجهات بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الشبكات" then
@@ -8240,7 +8240,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:WebLinks'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الشبكات")  
 DevAbs:set(ZOLARS..'Abs:Lock:WebLinks'..msg.chat_id_,true) 
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الشبكات بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الشبكات بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "العربية" then
@@ -8248,7 +8248,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل العربية")  
 DevAbs:set(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽العربية بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽العربية بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الانكليزيه" then
@@ -8256,7 +8256,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:English'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الانكليزيه")  
 DevAbs:set(ZOLARS..'Abs:Lock:English'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الانكليزيه بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الانكليزيه بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الملصقات" then
@@ -8264,7 +8264,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:Stickers'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الملصقات")  
 DevAbs:set(ZOLARS..'Abs:Lock:Stickers'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الملصقات بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الملصقات بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "الماركداون" then
@@ -8280,7 +8280,7 @@ if not DevAbs:get(ZOLARS..'Abs:Lock:TagServr'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم قفل الاشعارات")  
 DevAbs:set(ZOLARS..'Abs:Lock:TagServr'..msg.chat_id_,true)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الاشعارات بالفعل مقفله في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الاشعارات بالفعل مقفلة في المجموعة', 1, 'md')
 end
 end
 if LockText[2] == "التوجيه" then
@@ -8302,7 +8302,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Text'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الالدردشة")  
 DevAbs:del(ZOLARS..'Abs:Lock:Text'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الالدردشة بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الالدردشة بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الصور" then
@@ -8310,7 +8310,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Photo'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الصور")  
 DevAbs:del(ZOLARS..'Abs:Lock:Photo'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الصور بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الصور بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "المنشورات" then
@@ -8318,7 +8318,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح المنشورات")  
 DevAbs:del(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المنشورات بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المنشورات بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الدخول" then
@@ -8334,7 +8334,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Videos'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الفيديو")  
 DevAbs:del(ZOLARS..'Abs:Lock:Videos'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الفيديو بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الفيديو بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الملفات" then
@@ -8342,7 +8342,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Document'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الملفات")  
 DevAbs:del(ZOLARS..'Abs:Lock:Document'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الملفات بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الملفات بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الاونلاين" then
@@ -8350,7 +8350,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Inline'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الاونلاين")  
 DevAbs:del(ZOLARS..'Abs:Lock:Inline'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الاونلاين بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الاونلاين بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الماركداون" then
@@ -8358,7 +8358,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Markdown'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الماركداون")  
 DevAbs:del(ZOLARS..'Abs:Lock:Markdown'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الماركداون بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الماركداون بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "المتحركة" then
@@ -8366,7 +8366,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح المتحركة")  
 DevAbs:del(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المتحركة بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المتحركة بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الاغاني" then
@@ -8374,7 +8374,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Music'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الاغاني")  
 DevAbs:del(ZOLARS..'Abs:Lock:Music'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الاغاني بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الاغاني بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الصوت" then
@@ -8382,7 +8382,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Voice'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الصوت")  
 DevAbs:del(ZOLARS..'Abs:Lock:Voice'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الصوت بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الصوت بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الروابط" then
@@ -8390,7 +8390,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Links'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الروابط")  
 DevAbs:del(ZOLARS..'Abs:Lock:Links'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الروابط بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الروابط بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "المواقع" then
@@ -8398,7 +8398,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Location'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح المواقع")  
 DevAbs:del(ZOLARS..'Abs:Lock:Location'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المواقع بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المواقع بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "المعرف" or UnLockText[2] == "المعرفات" then
@@ -8406,7 +8406,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Tags'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح المعرفات")  
 DevAbs:del(ZOLARS..'Abs:Lock:Tags'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المعرفات بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المعرفات بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الهاشتاك" or UnLockText[2] == "التاك" then
@@ -8414,7 +8414,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Hashtak'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الهاشتاك")  
 DevAbs:del(ZOLARS..'Abs:Lock:Hashtak'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الهاشتاك بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الهاشتاك بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الجهات" then
@@ -8422,7 +8422,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Contact'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الجهات")  
 DevAbs:del(ZOLARS..'Abs:Lock:Contact'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الجهات بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الجهات بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الشبكات" then
@@ -8430,7 +8430,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:WebLinks'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الشبكات")  
 DevAbs:del(ZOLARS..'Abs:Lock:WebLinks'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الشبكات بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الشبكات بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "العربية" then
@@ -8438,7 +8438,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح العربية")  
 DevAbs:del(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽العربية بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽العربية بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الانكليزيه" then
@@ -8446,7 +8446,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:English'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الانكليزيه")  
 DevAbs:del(ZOLARS..'Abs:Lock:English'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الانكليزيه بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الانكليزيه بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الاشعارات" then
@@ -8454,7 +8454,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:TagServr'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الاشعارات")  
 DevAbs:del(ZOLARS..'Abs:Lock:TagServr'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الاشعارات بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الاشعارات بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "الملصقات" then
@@ -8462,7 +8462,7 @@ if DevAbs:get(ZOLARS..'Abs:Lock:Stickers'..msg.chat_id_) then
 ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم فتح الملصقات")  
 DevAbs:del(ZOLARS..'Abs:Lock:Stickers'..msg.chat_id_)
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الملصقات بالفعل مفتوحه في المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽الملصقات بالفعل مفتوحة في المجموعة', 1, 'md')
 end
 end
 if UnLockText[2] == "التوجيه" then
@@ -8850,38 +8850,38 @@ lock_bots = "بالتقيد"
 elseif DevAbs:get(ZOLARS.."Abs:Lock:Bots"..msg.chat_id_) == "kick" then
 lock_bots = "بالطرد"    
 else
-lock_bots = "مفتوحه"    
+lock_bots = "مفتوحة"    
 end
 --     Source dev-yousef     --
-if DevAbs:get(ZOLARS..'Abs:Lock:Text'..msg.chat_id_) then mute_text = 'مقفله' else mute_text = 'مفتوحه'end
-if DevAbs:get(ZOLARS..'Abs:Lock:Photo'..msg.chat_id_) then mute_photo = 'مقفله' else mute_photo = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Videos'..msg.chat_id_) then mute_video = 'مقفله' else mute_video = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_) then mute_gifs = 'مقفله' else mute_gifs = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Music'..msg.chat_id_) then mute_music = 'مقفله' else mute_music = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Inline'..msg.chat_id_) then mute_in = 'مقفله' else mute_in = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Voice'..msg.chat_id_) then mute_voice = 'مقفله' else mute_voice = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:EditMsgs'..msg.chat_id_) then mute_edit = 'مقفله' else mute_edit = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Links'..msg.chat_id_) then mute_links = 'مقفله' else mute_links = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Pin'..msg.chat_id_) then lock_pin = 'مقفله' else lock_pin = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Stickers'..msg.chat_id_) then lock_sticker = 'مقفله' else lock_sticker = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:TagServr'..msg.chat_id_) then lock_tgservice = 'مقفله' else lock_tgservice = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:WebLinks'..msg.chat_id_) then lock_wp = 'مقفله' else lock_wp = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Hashtak'..msg.chat_id_) then lock_htag = 'مقفله' else lock_htag = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Tags'..msg.chat_id_) then lock_tag = 'مقفله' else lock_tag = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Location'..msg.chat_id_) then lock_location = 'مقفله' else lock_location = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Contact'..msg.chat_id_) then lock_contact = 'مقفله' else lock_contact = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:English'..msg.chat_id_) then lock_english = 'مقفله' else lock_english = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_) then lock_arabic = 'مقفله' else lock_arabic = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Forwards'..msg.chat_id_) then lock_forward = 'مقفله' else lock_forward = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Document'..msg.chat_id_) then lock_file = 'مقفله' else lock_file = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Markdown'..msg.chat_id_) then markdown = 'مقفله' else markdown = 'مفتوحه' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_) then lock_spam = 'مقفله' else lock_spam = 'مفتوحه' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Text'..msg.chat_id_) then mute_text = 'مقفلة' else mute_text = 'مفتوحة'end
+if DevAbs:get(ZOLARS..'Abs:Lock:Photo'..msg.chat_id_) then mute_photo = 'مقفلة' else mute_photo = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Videos'..msg.chat_id_) then mute_video = 'مقفلة' else mute_video = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_) then mute_gifs = 'مقفلة' else mute_gifs = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Music'..msg.chat_id_) then mute_music = 'مقفلة' else mute_music = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Inline'..msg.chat_id_) then mute_in = 'مقفلة' else mute_in = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Voice'..msg.chat_id_) then mute_voice = 'مقفلة' else mute_voice = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:EditMsgs'..msg.chat_id_) then mute_edit = 'مقفلة' else mute_edit = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Links'..msg.chat_id_) then mute_links = 'مقفلة' else mute_links = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Pin'..msg.chat_id_) then lock_pin = 'مقفلة' else lock_pin = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Stickers'..msg.chat_id_) then lock_sticker = 'مقفلة' else lock_sticker = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:TagServr'..msg.chat_id_) then lock_tgservice = 'مقفلة' else lock_tgservice = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:WebLinks'..msg.chat_id_) then lock_wp = 'مقفلة' else lock_wp = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Hashtak'..msg.chat_id_) then lock_htag = 'مقفلة' else lock_htag = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Tags'..msg.chat_id_) then lock_tag = 'مقفلة' else lock_tag = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Location'..msg.chat_id_) then lock_location = 'مقفلة' else lock_location = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Contact'..msg.chat_id_) then lock_contact = 'مقفلة' else lock_contact = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:English'..msg.chat_id_) then lock_english = 'مقفلة' else lock_english = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_) then lock_arabic = 'مقفلة' else lock_arabic = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Forwards'..msg.chat_id_) then lock_forward = 'مقفلة' else lock_forward = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Document'..msg.chat_id_) then lock_file = 'مقفلة' else lock_file = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Markdown'..msg.chat_id_) then markdown = 'مقفلة' else markdown = 'مفتوحة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_) then lock_spam = 'مقفلة' else lock_spam = 'مفتوحة' end
 if DevAbs:get(ZOLARS..'Abs:Lock:Join'..msg.chat_id_) then lock_Join = 'مقفل' else lock_Join = 'مفتوح' end
-if DevAbs:get(ZOLARS.."Abs:Lock:Welcome"..msg.chat_id_) then send_welcome = 'مقفله' else send_welcome = 'مفتوحه' end
+if DevAbs:get(ZOLARS.."Abs:Lock:Welcome"..msg.chat_id_) then send_welcome = 'مقفلة' else send_welcome = 'مفتوحة' end
 if DevAbs:get(ZOLARS..'Abs:Lock:Fshar'..msg.chat_id_) then lock_fshar = 'مفتوح' else lock_fshar = 'مقفل' end
 if DevAbs:get(ZOLARS..'Abs:Lock:Kfr'..msg.chat_id_) then lock_kaf = 'مفتوح' else lock_kaf = 'مقفل' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحه' else lock_taf = 'مقفله' end
-if DevAbs:get(ZOLARS..'Abs:Lock:Farsi'..msg.chat_id_) then lock_farsi = 'مقفله' else lock_farsi = 'مفتوحه' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحة' else lock_taf = 'مقفلة' end
+if DevAbs:get(ZOLARS..'Abs:Lock:Farsi'..msg.chat_id_) then lock_farsi = 'مقفلة' else lock_farsi = 'مفتوحة' end
 local Flood_Num = DevAbs:hget(ZOLARS.."Abs:Spam:Group:User"..msg.chat_id_,"Num:Spam") or 5
 --     Source dev-yousef     --
 local TXTE = "🇸🇦╽اعدادات المجموعة ⤶ ⤹\n• • • • • • Y•L • • • • • •\n"
@@ -9213,32 +9213,32 @@ end
 --     Source dev-yousef     --
 if Admin(msg) then
 if DevAbs:get(ZOLARS..'Abs:LockSettings'..msg.chat_id_) then 
-if text == "الروابط" then if DevAbs:get(ZOLARS..'Abs:Lock:Links'..msg.chat_id_) then mute_links = 'مقفله' else mute_links = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الروابط ⤶ "..mute_links.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "المعرف" or text == "المعرفات" then if DevAbs:get(ZOLARS..'Abs:Lock:Tags'..msg.chat_id_) then lock_tag = 'مقفوله' else lock_tag = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽المعرف ⤶ "..lock_tag.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "المتحركة" or text == "الملصقات المتحركة" then if DevAbs:get(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_) then mute_gifs = 'مقفوله' else mute_gifs = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽المتحركة ⤶ "..mute_gifs.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الملصقات" then if DevAbs:get(ZOLARS..'Abs:Lock:Stickers'..msg.chat_id_) then lock_sticker = 'مقفوله' else lock_sticker = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الملصقات ⤶ "..lock_sticker.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الصور" then if DevAbs:get(ZOLARS..'Abs:Lock:Photo'..msg.chat_id_) then mute_photo = 'مقفوله' else mute_photo = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الصور ⤶ "..mute_photo.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الفيديو" or text == "الفيديوهات" then if DevAbs:get(ZOLARS..'Abs:Lock:Videos'..msg.chat_id_) then mute_video = 'مقفوله' else mute_video = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الفيديو ⤶ "..mute_video.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الروابط" then if DevAbs:get(ZOLARS..'Abs:Lock:Links'..msg.chat_id_) then mute_links = 'مقفلة' else mute_links = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽الروابط ⤶ "..mute_links.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "المعرف" or text == "المعرفات" then if DevAbs:get(ZOLARS..'Abs:Lock:Tags'..msg.chat_id_) then lock_tag = 'مقفوله' else lock_tag = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽المعرف ⤶ "..lock_tag.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "المتحركة" or text == "الملصقات المتحركة" then if DevAbs:get(ZOLARS..'Abs:Lock:Gifs'..msg.chat_id_) then mute_gifs = 'مقفوله' else mute_gifs = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽المتحركة ⤶ "..mute_gifs.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الملصقات" then if DevAbs:get(ZOLARS..'Abs:Lock:Stickers'..msg.chat_id_) then lock_sticker = 'مقفوله' else lock_sticker = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽الملصقات ⤶ "..lock_sticker.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الصور" then if DevAbs:get(ZOLARS..'Abs:Lock:Photo'..msg.chat_id_) then mute_photo = 'مقفوله' else mute_photo = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽الصور ⤶ "..mute_photo.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الفيديو" or text == "الفيديوهات" then if DevAbs:get(ZOLARS..'Abs:Lock:Videos'..msg.chat_id_) then mute_video = 'مقفوله' else mute_video = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽الفيديو ⤶ "..mute_video.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الاونلاين" then if DevAbs:get(ZOLARS..'Abs:Lock:Inline'..msg.chat_id_) then mute_in = 'مقفل' else mute_in = 'مفتوح' end local ZOLARSTEAM = "\n" .."🇸🇦╽الاونلاين ⤶ "..mute_in.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الالدردشة" then if DevAbs:get(ZOLARS..'Abs:Lock:Text'..msg.chat_id_) then mute_text = 'مقفله' else mute_text = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الالدردشة ⤶ "..mute_text.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الالدردشة" then if DevAbs:get(ZOLARS..'Abs:Lock:Text'..msg.chat_id_) then mute_text = 'مقفلة' else mute_text = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽الالدردشة ⤶ "..mute_text.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "التوجيه" or text == "اعاده التوجيه" then if DevAbs:get(ZOLARS..'Abs:Lock:Forwards'..msg.chat_id_) then lock_forward = 'مقفل' else lock_forward = 'مفتوح' end local ZOLARSTEAM = "\n" .."🇸🇦╽التوجيه ⤶ "..lock_forward.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الاغاني" then if DevAbs:get(ZOLARS..'Abs:Lock:Music'..msg.chat_id_) then mute_music = 'مقفوله' else mute_music = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الاغاني ⤶ "..mute_music.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الاغاني" then if DevAbs:get(ZOLARS..'Abs:Lock:Music'..msg.chat_id_) then mute_music = 'مقفوله' else mute_music = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽الاغاني ⤶ "..mute_music.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الصوت" or text == "الصوتيات" then if DevAbs:get(ZOLARS..'Abs:Lock:Voice'..msg.chat_id_) then mute_voice = 'مقفول' else mute_voice = 'مفتوح' end local ZOLARSTEAM = "\n" .."🇸🇦╽الصوت ⤶ "..mute_voice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الجهات" or text == "جهات الاتصال" then if DevAbs:get(ZOLARS..'Abs:Lock:Contact'..msg.chat_id_) then lock_contact = 'مقفوله' else lock_contact = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الجهات ⤶ "..lock_contact.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الجهات" or text == "جهات الاتصال" then if DevAbs:get(ZOLARS..'Abs:Lock:Contact'..msg.chat_id_) then lock_contact = 'مقفوله' else lock_contact = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽الجهات ⤶ "..lock_contact.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الماركداون" then if DevAbs:get(ZOLARS..'Abs:Lock:Markdown'..msg.chat_id_) then markdown = 'مقفل' else markdown = 'مفتوح' end local ZOLARSTEAM = "\n" .."🇸🇦╽الماركداون ⤶ "..markdown.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الهاشتاك" then if DevAbs:get(ZOLARS..'Abs:Lock:Hashtak'..msg.chat_id_) then lock_htag = 'مقفل' else lock_htag = 'مفتوح' end local ZOLARSTEAM = "\n" .."🇸🇦╽الهاشتاك ⤶ "..lock_htag.."\n"Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "التعديل" then if DevAbs:get(ZOLARS..'Abs:Lock:EditMsgs'..msg.chat_id_) then mute_edit = 'مقفل' else mute_edit = 'مفتوح' end local ZOLARSTEAM = "\n" .."🇸🇦╽التعديل ⤶ "..mute_edit.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "التثبيت" then if DevAbs:get(ZOLARS..'Abs:Lock:Pin'..msg.chat_id_) then lock_pin = 'مقفل' else lock_pin = 'مفتوح' end local ZOLARSTEAM = "\n" .."🇸🇦╽التثبيت ⤶ "..lock_pin.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الاشعارات" then if DevAbs:get(ZOLARS..'Abs:Lock:TagServr'..msg.chat_id_) then lock_tgservice = 'مقفوله' else lock_tgservice = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الاشعارات ⤶ "..lock_tgservice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "المنشورات" then if DevAbs:get(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_) then lock_spam = 'مقفوله' else lock_spam = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽المنشورات ⤶ "..lock_spam.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الاشعارات" then if DevAbs:get(ZOLARS..'Abs:Lock:TagServr'..msg.chat_id_) then lock_tgservice = 'مقفوله' else lock_tgservice = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽الاشعارات ⤶ "..lock_tgservice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "المنشورات" then if DevAbs:get(ZOLARS..'Abs:Lock:Spam'..msg.chat_id_) then lock_spam = 'مقفوله' else lock_spam = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽المنشورات ⤶ "..lock_spam.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الدخول" then if DevAbs:get(ZOLARS..'Abs:Lock:Join'..msg.chat_id_) then lock_Join = 'مقفول' else lock_Join = 'مفتوح' end local ZOLARSTEAM = "\n" .."🇸🇦╽الدخول ⤶ "..lock_Join.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الشبكات" then if DevAbs:get(ZOLARS..'Abs:Lock:WebLinks'..msg.chat_id_) then lock_wp = 'مقفوله' else lock_wp = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الشبكات ⤶ "..lock_wp.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "المواقع" then if DevAbs:get(ZOLARS..'Abs:Lock:Location'..msg.chat_id_) then lock_location = 'مقفوله' else lock_location = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽المواقع ⤶ "..lock_location.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "العربية" then if DevAbs:get(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_) then lock_arabic = 'مقفوله' else lock_arabic = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽العربية ⤶ "..lock_arabic.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الانكليزيه" then if DevAbs:get(ZOLARS..'Abs:Lock:English'..msg.chat_id_) then lock_english = 'مقفوله' else lock_english = 'مفتوحه' end local ZOLARSTEAM = "\n" .."🇸🇦╽الانكليزيه ⤶ "..lock_english.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الشبكات" then if DevAbs:get(ZOLARS..'Abs:Lock:WebLinks'..msg.chat_id_) then lock_wp = 'مقفوله' else lock_wp = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽الشبكات ⤶ "..lock_wp.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "المواقع" then if DevAbs:get(ZOLARS..'Abs:Lock:Location'..msg.chat_id_) then lock_location = 'مقفوله' else lock_location = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽المواقع ⤶ "..lock_location.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "العربية" then if DevAbs:get(ZOLARS..'Abs:Lock:Arabic'..msg.chat_id_) then lock_arabic = 'مقفوله' else lock_arabic = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽العربية ⤶ "..lock_arabic.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الانكليزيه" then if DevAbs:get(ZOLARS..'Abs:Lock:English'..msg.chat_id_) then lock_english = 'مقفوله' else lock_english = 'مفتوحة' end local ZOLARSTEAM = "\n" .."🇸🇦╽الانكليزيه ⤶ "..lock_english.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "الكفر" then if DevAbs:get(ZOLARS..'Abs:Lock:Kfr'..msg.chat_id_) then lock_kaf = 'مفتوح' else lock_kaf = 'مقفل' end local ZOLARSTEAM = "\n" .."🇸🇦╽الكفر ⤶ "..lock_kaf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 if text == "السب" then if DevAbs:get(ZOLARS..'Abs:Lock:Fshar'..msg.chat_id_) then lock_fshar = 'مفتوح' else lock_fshar = 'مقفل' end local ZOLARSTEAM = "\n" .."🇸🇦╽السب ⤶ "..lock_fshar.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
-if text == "الطائفية" then if DevAbs:get(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحه' else lock_taf = 'مقفله' end local ZOLARSTEAM = "\n" .."🇸🇦╽الطائفية ⤶ "..lock_taf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
+if text == "الطائفية" then if DevAbs:get(ZOLARS..'Abs:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحة' else lock_taf = 'مقفلة' end local ZOLARSTEAM = "\n" .."🇸🇦╽الطائفية ⤶ "..lock_taf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, ZOLARSTEAM, 1, 'md') end
 end
 --     Source dev-yousef     --
 if text == 'تفعيل كشف الاعدادات' and ChCheck(msg) then 
