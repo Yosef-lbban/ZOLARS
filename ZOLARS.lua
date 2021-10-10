@@ -4646,7 +4646,7 @@ local username = text:match('^هينه @(.*)') or text:match('^هينها @(.*)'
 function ZOLARSTEAM(extra,result,success)
 if result.id_ then  
 if tonumber(result.id_) == tonumber(ZOLARS) then  
-Dev_Abs(msg.chat_id_, msg.id_, 1, 'تستحق الإهانة يا عفن؟🤔👌🏿', 1, 'md')  
+Dev_Abs(msg.chat_id_, msg.id_, 1, 'تستحق الإهانة يا عفن .. اخرج من قروبنا انت محروم من الميراث؟🤔👌🏿', 1, 'md')  
 return false 
 end  
 if tonumber(result.id_) == tonumber(DevId) then 
@@ -4677,7 +4677,7 @@ if text == ("هينه") or text == ("بعد هينه") or text == ("هينه ب�
 if not DevAbs:get(ZOLARS..'Abs:Lock:Stupid'..msg.chat_id_) then
 function hena(extra, result, success)
 if tonumber(result.sender_user_id_) == tonumber(ZOLARS) then 
-Dev_Abs(msg.chat_id_, msg.id_, 1, 'تستحق الإهانة يا عفن؟🤔👌🏿', 1, 'md') 
+Dev_Abs(msg.chat_id_, msg.id_, 1, 'تستحق الإهانة يا عفن .. اخرج من قروبنا انت محروم من الميراث؟🤔👌🏿', 1, 'md') 
 return false  
 end  
 if tonumber(result.sender_user_id_) == tonumber(DevId) then  
