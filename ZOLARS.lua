@@ -1633,15 +1633,13 @@ local Text = [[
 🇸🇦╽رابط الحذف • نزلني • اطردني • المطور 
 🇸🇦╽مين ضافني • مشاهدات المنشور • الرابط 
 🇸🇦╽ايدي المجموعة • معلومات المجموعة 
-🇸🇦╽نسبه الحب • نسبه الكره • نسبه الغباء 
-🇸🇦╽نسبه الرجولة • نسبه الانوثه • التفاعل
+🇸🇦╽نسبة الحب • نسبة الكره • نسبة الغباء 
+🇸🇦╽نسبة الرجولة • نسبة الانوثة • التفاعل
 • • • • • • Y•L • • • • • •
 🇸🇦╽لقبه + بالرد
 🇸🇦╽قول + الكلمه
 🇸🇦╽زخرفه + اسمك
-🇸🇦╽برج + نوع البرج
 🇸🇦╽معنى اسم + الاسم
-🇸🇦╽بوسه • بوسها ⤶ بالرد
 🇸🇦╽احسب + تاريخ ميلادك
 🇸🇦╽رفع مطي • تنزيل مطي • المطايه
 🇸🇦╽هينه • هينها ⤶ بالرد • بالمعرف
@@ -9051,23 +9049,23 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
 end
 --     Source dev-yousef     --
-if text and (text == "تفعيل اوامر النسب" or text == "تفعيل نسبه الحب" or text == "تفعيل نسبه الكره" or text == "تفعيل نسبه الرجولة" or text == "تفعيل نسبه الانوثه" or text == "تفعيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
+if text and (text == "تفعيل اوامر النسب" or text == "تفعيل نسبة الحب" or text == "تفعيل نسبة الكره" or text == "تفعيل نسبة الرجولة" or text == "تفعيل نسبة الانوثة" or text == "تفعيل نسبة الغباء") and Manager(msg) and ChCheck(msg) then
 local ZOLARSTEAM = '🇸🇦╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n🇸🇦╽تم تفعيل اوامر النسب'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:del(ZOLARS..'Abs:Nsba:Abs'..msg.chat_id_) 
 end
-if text and (text == "تعطيل اوامر النسب" or text == "تعطيل نسبه الحب" or text == "تعطيل نسبه الكره" or text == "تعطيل نسبه الرجولة" or text == "تعطيل نسبه الانوثه" or text == "تعطيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
+if text and (text == "تعطيل اوامر النسب" or text == "تعطيل نسبة الحب" or text == "تعطيل نسبة الكره" or text == "تعطيل نسبة الرجولة" or text == "تعطيل نسبة الانوثة" or text == "تعطيل نسبة الغباء") and Manager(msg) and ChCheck(msg) then
 local ZOLARSTEAM = '🇸🇦╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n🇸🇦╽تم تعطيل اوامر النسب'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:set(ZOLARS..'Abs:Nsba:Abs'..msg.chat_id_,true)  
 end
 if not DevAbs:get(ZOLARS..'Abs:Nsba:Abs'..msg.chat_id_) then
-if text == "نسبه الحب" and ChCheck(msg) or text == "نسبة الحب" and ChCheck(msg) then
+if text == "نسبة الحب" and ChCheck(msg) or text == "نسبة الحب" and ChCheck(msg) then
 DevAbs:set(ZOLARS..'LoveNsba:Abs'..msg.chat_id_..msg.sender_user_id_,true) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽قم بارسل اسمين لحساب نسبة الحب بينهما كمثال ⤶ جاك وروز', 1, 'md')
 end
 end
-if text and text ~= "نسبه الحب" and text ~= "نسبة الحب" and DevAbs:get(ZOLARS..'LoveNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
+if text and text ~= "نسبة الحب" and text ~= "نسبة الحب" and DevAbs:get(ZOLARS..'LoveNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم الغاء امر نسبة الحب ', 1, 'md')
 DevAbs:del(ZOLARS..'LoveNsba:Abs'..msg.chat_id_..msg.sender_user_id_) 
@@ -9079,12 +9077,12 @@ DevAbs:del(ZOLARS..'LoveNsba:Abs'..msg.chat_id_..msg.sender_user_id_)
 return false 
 end
 if not DevAbs:get(ZOLARS..'Abs:Nsba:Abs'..msg.chat_id_) then
-if text == "نسبه الكره" and ChCheck(msg) or text == "نسبة الكره" and ChCheck(msg) then
+if text == "نسبة الكره" and ChCheck(msg) or text == "نسبة الكره" and ChCheck(msg) then
 DevAbs:set(ZOLARS..'HataNsba:Abs'..msg.chat_id_..msg.sender_user_id_,true) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽قم بارسل اسمين لحساب نسبة الكره بينهما كمثال ⤶ جاك وروز', 1, 'md')
 end
 end
-if text and text ~= "نسبه الكره" and text ~= "نسبة الكره" and DevAbs:get(ZOLARS..'HataNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
+if text and text ~= "نسبة الكره" and text ~= "نسبة الكره" and DevAbs:get(ZOLARS..'HataNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم الغاء امر نسبة الكره ', 1, 'md')
 DevAbs:del(ZOLARS..'HataNsba:Abs'..msg.chat_id_..msg.sender_user_id_) 
@@ -9096,12 +9094,12 @@ DevAbs:del(ZOLARS..'HataNsba:Abs'..msg.chat_id_..msg.sender_user_id_)
 return false 
 end
 if not DevAbs:get(ZOLARS..'Abs:Nsba:Abs'..msg.chat_id_) then
-if text and (text == "نسبه الرجولة" or text == "نسبة الرجولة" or text == "نسبه رجولة" or text == "نسبة رجولة") and ChCheck(msg) then
+if text and (text == "نسبة الرجولة" or text == "نسبة الرجولة" or text == "نسبة رجولة" or text == "نسبة رجولة") and ChCheck(msg) then
 DevAbs:set(ZOLARS..'RjolaNsba:Abs'..msg.chat_id_..msg.sender_user_id_,true) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽قم بارسل اسم الشخص لقياس نسبة رجولته كمثال ⤶ جاك', 1, 'md')
 end
 end
-if text and text ~= "نسبه الرجولة" and text ~= "نسبة الرجولة" and text ~= "نسبه رجولة" and text ~= "نسبة رجولة" and DevAbs:get(ZOLARS..'RjolaNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
+if text and text ~= "نسبة الرجولة" and text ~= "نسبة الرجولة" and text ~= "نسبة رجولة" and text ~= "نسبة رجولة" and DevAbs:get(ZOLARS..'RjolaNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم الغاء امر نسبة الرجولة ', 1, 'md')
 DevAbs:del(ZOLARS..'RjolaNsba:Abs'..msg.chat_id_..msg.sender_user_id_) 
@@ -9113,14 +9111,14 @@ DevAbs:del(ZOLARS..'RjolaNsba:Abs'..msg.chat_id_..msg.sender_user_id_)
 return false 
 end
 if not DevAbs:get(ZOLARS..'Abs:Nsba:Abs'..msg.chat_id_) then
-if text and (text == "نسبه الانوثه" or text == "نسبة الانوثه" or text == "نسبه انوثه" or text == "نسبة انوثه") and ChCheck(msg) then
+if text and (text == "نسبة الانوثة" or text == "نسبة الانوثة" or text == "نسبة انوثة" or text == "نسبة انوثة") and ChCheck(msg) then
 DevAbs:set(ZOLARS..'AnothaNsba:Abs'..msg.chat_id_..msg.sender_user_id_,true) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽قم بارسل اسم الشخص لقياس نسبة انوثته كمثال ⤶ روز', 1, 'md')
 end
 end
-if text and text ~= "نسبه الانوثه" and text ~= "نسبة الانوثه" and text ~= "نسبه انوثه" and text ~= "نسبة انوثه" and DevAbs:get(ZOLARS..'AnothaNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
+if text and text ~= "نسبة الانوثة" and text ~= "نسبة الانوثة" and text ~= "نسبة انوثة" and text ~= "نسبة انوثة" and DevAbs:get(ZOLARS..'AnothaNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم الغاء امر نسبة الانوثه ', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم الغاء امر نسبة الانوثة ', 1, 'md')
 DevAbs:del(ZOLARS..'AnothaNsba:Abs'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end 
@@ -9130,12 +9128,12 @@ DevAbs:del(ZOLARS..'AnothaNsba:Abs'..msg.chat_id_..msg.sender_user_id_)
 return false 
 end
 if not DevAbs:get(ZOLARS..'Abs:Nsba:Abs'..msg.chat_id_) then
-if text and (text == "نسبه الغباء" or text == "نسبة الغباء") and ChCheck(msg) then
+if text and (text == "نسبة الغباء" or text == "نسبة الغباء") and ChCheck(msg) then
 DevAbs:set(ZOLARS..'StupidNsba:Abs'..msg.chat_id_..msg.sender_user_id_,true) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽قم بارسل اسم الشخص لقياس نسبة غبائه كمثال ⤶ جاك او روز', 1, 'md')
 end
 end
-if text and text ~= "نسبه الغباء" and text ~= "نسبة الغباء" and DevAbs:get(ZOLARS..'StupidNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
+if text and text ~= "نسبة الغباء" and text ~= "نسبة الغباء" and DevAbs:get(ZOLARS..'StupidNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم الغاء امر نسبة الغباء ', 1, 'md')
 DevAbs:del(ZOLARS..'StupidNsba:Abs'..msg.chat_id_..msg.sender_user_id_) 
@@ -10717,15 +10715,13 @@ local Text = [[
 🇸🇦╽رابط الحذف • نزلني • اطردني • المطور 
 🇸🇦╽مين ضافني • مشاهدات المنشور • الرابط 
 🇸🇦╽ايدي المجموعة • معلومات المجموعة 
-🇸🇦╽نسبه الحب • نسبه الكره • نسبه الغباء 
-🇸🇦╽نسبه الرجولة • نسبه الانوثه • التفاعل
+🇸🇦╽نسبة الحب • نسبة الكره • نسبة الغباء 
+🇸🇦╽نسبة الرجولة • نسبة الانوثة • التفاعل
 • • • • • • Y•L • • • • • •
 🇸🇦╽لقبه + بالرد
 🇸🇦╽قول + الكلمه
 🇸🇦╽زخرفه + اسمك
-🇸🇦╽برج + نوع البرج
 🇸🇦╽معنى اسم + الاسم
-🇸🇦╽بوسه • بوسها ⤶ بالرد
 🇸🇦╽احسب + تاريخ ميلادك
 🇸🇦╽رفع مطي • تنزيل مطي • المطايه
 🇸🇦╽هينه • هينها ⤶ بالرد • بالمعرف
