@@ -1283,7 +1283,7 @@ local Text = [[
 🇸🇦╽م5 ⤶ اوامر المطورين
 🇸🇦╽م6 ⤶ اوامر الاعضاء
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
@@ -1347,7 +1347,7 @@ local Text = [[
 🇸🇦╽قفل • فتح ⤶  التحقق
 🇸🇦╽تعطيل • تفعيل ⤶  التحقق
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1417,7 +1417,7 @@ local Text = [[
 🇸🇦╽تقييد يوم + عدد الايام
 🇸🇦╽الغاء تقييد ⤶ لالغاء التقييد بالوقت
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1476,7 +1476,7 @@ local Text = [[
 🇸🇦╽ردود المدير • ردود المطور • التحقق
 🇸🇦╽ضافني • حساب العمر • الزخرفه • 00000
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1529,7 +1529,7 @@ local Text = [[
 🇸🇦╽المنشئين الاساسيين 
 🇸🇦╽حذف جميع الرتب
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1609,7 +1609,7 @@ local Text = [[
 🇸🇦╽ترحيب البوت • المغادره
 🇸🇦╽البوت الخدمي • التواصل
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1649,7 +1649,7 @@ local Text = [[
 🇸🇦╽تحويل + بالرد ⤶ صورة • ملصق • صوت • بصمه
 🇸🇦╽انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -4253,7 +4253,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1,[[
 • • • • • • Y•L • • • • • •
 🇸🇦╽نقاطي • بيع نقاطي
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]], 1, 'md')
 else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽عذرا الالعاب معطله في المجموعة', 1, 'md')
@@ -8917,7 +8917,7 @@ local TXTE = "🇸🇦╽اعدادات المجموعة ⤶ ⤹\n• • • �
 .."🇸🇦╽التكرار ⤶ "..flood.."\n"
 .."🇸🇦╽عدد التكرار ⤶ "..Flood_Num.."\n"
 .."🇸🇦╽عدد السبام ⤶ "..spam_c.."\n"
-.."• • • • • • Y•L • • • • • •\n🇸🇦╽[Source Channel](https://t.me/yousef_labban1)\n"
+.."• • • • • • Y•L • • • • • •\n🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)\n"
 Dev_Abs(msg.chat_id_, msg.id_, 1, TXTE, 1, 'md')
 end
 end
@@ -10324,7 +10324,7 @@ local Text = [[
 🇸🇦╽م5 ⤶ اوامر المطورين
 🇸🇦╽م6 ⤶ اوامر الاعضاء
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..msg.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..msg.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..msg.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
@@ -10399,7 +10399,7 @@ local Text = [[
 🇸🇦╽تعطيل • تفعيل ⤶  امسح
 🇸🇦╽تفعيل الحذف التلقائي - تعطيل الحذف التلقائي
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10475,7 +10475,7 @@ local Text = [[
 🇸🇦╽تقييد يوم + عدد الايام
 🇸🇦╽الغاء تقييد ⤶ لالغاء التقييد بالوقت
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10540,7 +10540,7 @@ local Text = [[
 🇸🇦╽ردود المدير • ردود المطور • التحقق
 🇸🇦╽ضافني • حساب العمر • الزخرفه • 00000
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10599,7 +10599,7 @@ local Text = [[
 🇸🇦╽المنشئين الاساسيين 
 🇸🇦╽حذف جميع الرتب
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10685,7 +10685,7 @@ local Text = [[
 🇸🇦╽ترحيب البوت • المغادره
 🇸🇦╽البوت الخدمي • التواصل
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10731,7 +10731,7 @@ local Text = [[
 🇸🇦╽تحويل + بالرد ⤶ صورة • ملصق • صوت • بصمه
 🇸🇦╽انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 • • • • • • Y•L • • • • • •
-🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
+🇸🇦╽[𝒔𝒐𝒖𝒓𝒄𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍](https://t.me/yousef_labban1)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end
