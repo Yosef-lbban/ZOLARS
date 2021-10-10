@@ -436,7 +436,7 @@ if v.Admins then
 for k,idmod in pairs(v.Admins) do
 vardump(IdAdmins)
 DevAbs:sadd(ZOLARS..'Abs:Admins:'..IdGps,IdAdmins)  
-print('تم رفع ( '..k..' ) ادمنيه')
+print('تم رفع ( '..k..' ) الادمن')
 end
 end
 if v.Vips then
@@ -913,7 +913,7 @@ constructor = 'المنشئين • ' else constructor = '' end
 if DevAbs:sismember(ZOLARS..'Abs:Managers:'..data.chat_id_, data.sender_user_id_) then
 Managers = 'المدراء • ' else Managers = '' end
 if DevAbs:sismember(ZOLARS..'Abs:Admins:'..data.chat_id_, data.sender_user_id_) then
-admins = 'الادمنيه • ' else admins = '' end
+admins = 'الالادمن • ' else admins = '' end
 if DevAbs:sismember(ZOLARS..'Abs:VipMem:'..data.chat_id_, data.sender_user_id_) then
 vipmem = 'المميزين • ' else vipmem = '' end
 if DevAbs:sismember(ZOLARS..'Abs:Cleaner:'..data.chat_id_, data.sender_user_id_) then
@@ -1030,7 +1030,7 @@ elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':SetAdmin:(.
 local AbsId = DataText:match(tonumber(data.sender_user_id_)..':SetAdmin:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = AbsId},function(arg,dp) 
 DevAbs:sadd(ZOLARS..'Abs:Admins:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'🇸🇦╽العضو ⤶ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'zzzii')..')\n🇸🇦╽تم رفعه في قائمة الادمنيه')
+EditMsg(Chat_Id2, Msg_Id2,'🇸🇦╽العضو ⤶ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'zzzii')..')\n🇸🇦╽تم رفعه في قائمة الالادمن')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':SetManager:(.*)') then
 local AbsId = DataText:match(tonumber(data.sender_user_id_)..':SetManager:(.*)')
@@ -1085,7 +1085,7 @@ elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':RemAdmin:(.
 local AbsId = DataText:match(tonumber(data.sender_user_id_)..':RemAdmin:(.*)')
 tdcli_function ({ID = "GetUser",user_id_ = AbsId},function(arg,dp) 
 DevAbs:srem(ZOLARS..'Abs:Admins:'..data.chat_id_,dp.id_)
-EditMsg(Chat_Id2, Msg_Id2,'🇸🇦╽العضو ⤶ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'zzzii')..')\n🇸🇦╽تم تنزيله من قائمة الادمنيه')
+EditMsg(Chat_Id2, Msg_Id2,'🇸🇦╽العضو ⤶ ['..dp.first_name_..'](t.me/'..(dp.username_ or 'zzzii')..')\n🇸🇦╽تم تنزيله من قائمة الالادمن')
 end,nil)
 elseif DataText and DataText:match(tonumber(data.sender_user_id_)..':RemManager:(.*)') then
 local AbsId = DataText:match(tonumber(data.sender_user_id_)..':RemManager:(.*)')
@@ -1277,7 +1277,7 @@ local Text = [[
 🇸🇦╽اهلا بك في قائمة الاوامر ⤶ ⤹ 
 • • • • • • ₪ • • • • • •
 🇸🇦╽م1 ⤶ اوامر الحماية
-🇸🇦╽م2 ⤶ اوامر الادمنيه
+🇸🇦╽م2 ⤶ اوامر الالادمن
 🇸🇦╽م3 ⤶ اوامر المدراء
 🇸🇦╽م4 ⤶ اوامر المنشئين
 🇸🇦╽م5 ⤶ اوامر المطورين
@@ -1286,7 +1286,7 @@ local Text = [[
 🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
 ]] 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1350,7 +1350,7 @@ local Text = [[
 🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1364,7 +1364,7 @@ return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackq
 end
 local Help = DevAbs:get(ZOLARS..'Abs:Help2')
 local Text = [[
-🇸🇦╽اوامر الادمنيه ⤶ ⤹
+🇸🇦╽اوامر الالادمن ⤶ ⤹
 • • • • • • ₪ • • • • • •
 🇸🇦╽الاعدادت
 🇸🇦╽تاك للكل 
@@ -1412,7 +1412,7 @@ local Text = [[
 🇸🇦╽المقيدين • حذف المقيدين
 🇸🇦╽المحظورين • حذف المحظورين
 • • • • • • ₪ • • • • • •
-🇸🇦╽تقييد دقيقه + عدد الدقائق
+🇸🇦╽تقييد دقيقة + عدد الدقائق
 🇸🇦╽تقييد ساعه + عدد الساعات
 🇸🇦╽تقييد يوم + عدد الايام
 🇸🇦╽الغاء تقييد ⤶ لالغاء التقييد بالوقت
@@ -1420,7 +1420,7 @@ local Text = [[
 🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1452,7 +1452,7 @@ local Text = [[
 • • • • • • ₪ • • • • • •
 🇸🇦╽تنزيل الكل
 🇸🇦╽رفع ادمن • تنزيل ادمن
-🇸🇦╽الادمنيه • حذف الادمنيه
+🇸🇦╽الالادمن • حذف الالادمن
 • • • • • • ₪ • • • • • •
 🇸🇦╽تثبيت
 🇸🇦╽الغاء التثبيت
@@ -1479,7 +1479,7 @@ local Text = [[
 🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1532,7 +1532,7 @@ local Text = [[
 🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1562,7 +1562,7 @@ local Text = [[
 🇸🇦╽رفع • تنزيل ⤶ مدير عام
 🇸🇦╽حذف • المدراء العامين 
 🇸🇦╽رفع • تنزيل ⤶ ادمن عام
-🇸🇦╽حذف • الادمنيه العامين 
+🇸🇦╽حذف • الالادمن العامين 
 🇸🇦╽رفع • تنزيل ⤶ مميز عام
 🇸🇦╽حذف • المميزين عام 
 • • • • • • ₪ • • • • • •
@@ -1612,7 +1612,7 @@ local Text = [[
 🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1634,7 +1634,7 @@ local Text = [[
 🇸🇦╽مين ضافني • مشاهدات المنشور • الرابط 
 🇸🇦╽ايدي المجموعة • معلومات المجموعة 
 🇸🇦╽نسبه الحب • نسبه الكره • نسبه الغباء 
-🇸🇦╽نسبه الرجوله • نسبه الانوثه • التفاعل
+🇸🇦╽نسبه الرجولة • نسبه الانوثه • التفاعل
 • • • • • • ₪ • • • • • •
 🇸🇦╽لقبه + بالرد
 🇸🇦╽قول + الكلمه
@@ -1654,7 +1654,7 @@ local Text = [[
 🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -2008,7 +2008,7 @@ local start = DevAbs:get(ZOLARS.."Abs:Start:Bot")
 if start then 
 Start_Source = start
 else
-Start_Source = "🇸🇦╽مرحبا انا بوت اسمي "..NameBot.."\n🇸🇦╽اختصاصي حماية المجموعات\n🇸🇦╽من التفليش والسبام والخخ .. . ،\n🇸🇦╽تفعيلي سهل ومجانا فقط قم برفعي ادمن في مجموعتك وارسل امر ⤶ تفعيل\n🇸🇦╽سيتم رفع الادمنيه والمنشئ تلقائيا"
+Start_Source = "🇸🇦╽مرحبا انا بوت اسمي "..NameBot.."\n🇸🇦╽اختصاصي حماية المجموعات\n🇸🇦╽من التفليش والسبام والخخ .. . ،\n🇸🇦╽تفعيلي سهل ومجانا فقط قم برفعي ادمن في مجموعتك وارسل امر ⤶ تفعيل\n🇸🇦╽سيتم رفع الالادمن والمنشئ تلقائيا"
 end 
 SendInline(msg.chat_id_,Start_Source,nil,inline)
 end,nil)
@@ -2101,7 +2101,7 @@ local start = DevAbs:get(ZOLARS.."Abs:Start:Bot")
 if start then 
 Start_Source = start
 else
-Start_Source = "🇸🇦╽مرحبا انا بوت اسمي "..NameBot.."\n🇸🇦╽اختصاصي حماية المجموعات\n🇸🇦╽من التفليش والسبام والخخ .. . ،\n🇸🇦╽تفعيلي سهل ومجانا فقط قم برفعي ادمن في مجموعتك وارسل امر ⤶ تفعيل\n🇸🇦╽سيتم رفع الادمنيه والمنشئ تلقائيا"
+Start_Source = "🇸🇦╽مرحبا انا بوت اسمي "..NameBot.."\n🇸🇦╽اختصاصي حماية المجموعات\n🇸🇦╽من التفليش والسبام والخخ .. . ،\n🇸🇦╽تفعيلي سهل ومجانا فقط قم برفعي ادمن في مجموعتك وارسل امر ⤶ تفعيل\n🇸🇦╽سيتم رفع الالادمن والمنشئ تلقائيا"
 end 
 Dev_Abs(msg.chat_id_, msg.id_, 1, Start_Source, 1, 'md')
 return false
@@ -2938,7 +2938,7 @@ tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = ZOLARS,offset_ = 0,limit
 for i=0,#msg.content_.members_ do    
 BotWelcome = msg.content_.members_[i].id_    
 if BotWelcome and BotWelcome == tonumber(ZOLARS) then 
-if DevAbs:sismember(ZOLARS..'Abs:Groups',msg.chat_id_) then BotText = "مفعله في السابق\n🇸🇦╽ارسل ⤶ الاوامر واستمتع بالمميزيات" else BotText = "معطله يجب رفعي مشرف\n🇸🇦╽بعد ذلك يرجى ارسال امر ⤶ تفعيل\n🇸🇦╽سيتم رفع الادمنيه والمنشئ تلقائيا" end 
+if DevAbs:sismember(ZOLARS..'Abs:Groups',msg.chat_id_) then BotText = "مفعله في السابق\n🇸🇦╽ارسل ⤶ الاوامر واستمتع بالمميزيات" else BotText = "معطله يجب رفعي مشرف\n🇸🇦╽بعد ذلك يرجى ارسال امر ⤶ تفعيل\n🇸🇦╽سيتم رفع الالادمن والمنشئ تلقائيا" end 
 if DevAbs:get(ZOLARS.."Abs:Text:BotWelcome") then AbsText = DevAbs:get(ZOLARS.."Abs:Text:BotWelcome") else AbsText = "🇸🇦╽مرحبا انا بوت اسمي "..NameBot.."\n🇸🇦╽حالة المجموعة ⤶ "..BotText.."\n• • • • • • ₪ • • • • • •" end 
 if DevAbs:get(ZOLARS.."Abs:Photo:BotWelcome") then AbsPhoto = DevAbs:get(ZOLARS.."Abs:Photo:BotWelcome") elseif abbas.photos_[0] then AbsPhoto = abbas.photos_[0].sizes_[1].photo_.persistent_id_ else AbsPhoto = nil end 
 if AbsPhoto ~= nil then
@@ -3799,7 +3799,7 @@ name = DevAbs2[math.random(#DevAbs2)]
 DevAbs:set(ZOLARS..'Abs:GameNum'..msg.chat_id_,name)
 DevAbs:del(ZOLARS..'Abs:Games:Ids'..msg.chat_id_)
 name = string.gsub(name,'الجرس','شيئ اذا لمسته صرخ ما هوه ؟')
-name = string.gsub(name,'عقرب الساعه','اخوان لا يستطيعان تمضيه اكثر من دقيقه معا فما هما ؟')
+name = string.gsub(name,'عقرب الساعه','اخوان لا يستطيعان تمضيه اكثر من دقيقة معا فما هما ؟')
 name = string.gsub(name,'السمك','ما هو الحيوان الذي لم يصعد الى سفينة نوح عليه السلام ؟')
 name = string.gsub(name,'المطر','شيئ يسقط على رأسك من الاعلى ولا يجرحك فما هو ؟')
 name = string.gsub(name,'5','ما العدد الذي اذا ضربته بنفسه واضفت عليه 5 يصبح ثلاثين ')
@@ -4301,7 +4301,7 @@ DevAbs:del(ZOLARS..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_)
 end
 end
 --     Source dev-yousef     --
-if text == 'رفع المشرفين' and ChCheck(msg) or text == 'رفع الادمنيه' and ChCheck(msg) then  
+if text == 'رفع المشرفين' and ChCheck(msg) or text == 'رفع الالادمن' and ChCheck(msg) then  
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 200},function(arg,abbas) 
 local num = 0
 local admins = abbas.members_  
@@ -4324,9 +4324,9 @@ DevAbs:sadd(ZOLARS..'Abs:AbsConstructor:'..msg.chat_id_,Manager_id)
 end  
 end  
 if num == 0 then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽لا يوجد ادمنيه ليتم رفعهم\n🇸🇦╽تم رفع مالك المجموعة", 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽لا يوجد الادمن ليتم رفعهم\n🇸🇦╽تم رفع مالك المجموعة", 1, 'md')
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم رفع '..num..' من الادمنيه \n🇸🇦╽تم رفع مالك المجموعة', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم رفع '..num..' من الالادمن \n🇸🇦╽تم رفع مالك المجموعة', 1, 'md')
 end
 end,nil) 
 end
@@ -4789,7 +4789,7 @@ sudobot = 'المطورين • ' else sudobot = '' end
 if DevAbs:sismember(ZOLARS..'Abs:ManagerAll:',result.sender_user_id_) then
 managerall = 'المدراء العامين • ' else managerall = '' end
 if DevAbs:sismember(ZOLARS..'Abs:AdminAll:',result.sender_user_id_) then
-adminall = 'الادمنيه العامين • ' else adminall = '' end
+adminall = 'الالادمن العامين • ' else adminall = '' end
 if DevAbs:sismember(ZOLARS..'Abs:VipAll:',result.sender_user_id_) then
 vpall = 'المميزين العامين • ' else vpall = '' end
 if DevAbs:sismember(ZOLARS..'Abs:BasicConstructor:'..msg.chat_id_, result.sender_user_id_) then
@@ -4799,7 +4799,7 @@ constructor = 'المنشئين • ' else constructor = '' end
 if DevAbs:sismember(ZOLARS..'Abs:Managers:'..msg.chat_id_, result.sender_user_id_) then
 manager = 'المدراء • ' else manager = '' end
 if DevAbs:sismember(ZOLARS..'Abs:Admins:'..msg.chat_id_, result.sender_user_id_) then
-admins = 'الادمنيه • ' else admins = '' end
+admins = 'الالادمن • ' else admins = '' end
 if DevAbs:sismember(ZOLARS..'Abs:VipMem:'..msg.chat_id_, result.sender_user_id_) then
 vipmem = 'المميزين • ' else vipmem = '' end
 if DevAbs:sismember(ZOLARS..'Abs:Cleaner:'..msg.chat_id_, result.sender_user_id_) then
@@ -4883,7 +4883,7 @@ sudobot = 'المطورين • ' else sudobot = '' end
 if DevAbs:sismember(ZOLARS..'Abs:ManagerAll:',result.id_) then
 managerall = 'المدراء العامين • ' else managerall = '' end
 if DevAbs:sismember(ZOLARS..'Abs:AdminAll:',result.id_) then
-adminall = 'الادمنيه العامين • ' else adminall = '' end
+adminall = 'الالادمن العامين • ' else adminall = '' end
 if DevAbs:sismember(ZOLARS..'Abs:VipAll:',result.id_) then
 vpall = 'المميزين العامين • ' else vpall = '' end
 if DevAbs:sismember(ZOLARS..'Abs:BasicConstructor:'..msg.chat_id_, result.id_) then
@@ -4893,7 +4893,7 @@ constructor = 'المنشئين • ' else constructor = '' end
 if DevAbs:sismember(ZOLARS..'Abs:Managers:'..msg.chat_id_, result.id_) then
 manager = 'المدراء • ' else manager = '' end
 if DevAbs:sismember(ZOLARS..'Abs:Admins:'..msg.chat_id_, result.id_) then
-admins = 'الادمنيه • ' else admins = '' end
+admins = 'الالادمن • ' else admins = '' end
 if DevAbs:sismember(ZOLARS..'Abs:VipMem:'..msg.chat_id_, result.id_) then
 vipmem = 'المميزين • ' else vipmem = '' end
 if DevAbs:sismember(ZOLARS..'Abs:Cleaner:'..msg.chat_id_, result.id_) then
@@ -5129,7 +5129,7 @@ if ManagerAll(msg) then
 if text ==('رفع ادمن عام') and ChCheck(msg) then
 function raf_reply(extra, result, success)
 DevAbs:sadd(ZOLARS..'Abs:AdminAll:',result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","🇸🇦╽تم رفعه في قائمة الادمنيه العامين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","🇸🇦╽تم رفعه في قائمة الالادمن العامين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),raf_reply)
@@ -5139,7 +5139,7 @@ local username = text:match('^رفع ادمن عام @(.*)')
 function promreply(extra,result,success)
 if result.id_ then
 DevAbs:sadd(ZOLARS..'Abs:AdminAll:',result.id_)
-ReplyStatus(msg,result.id_,"Reply","🇸🇦╽تم رفعه في قائمة الادمنيه العامين")  
+ReplyStatus(msg,result.id_,"Reply","🇸🇦╽تم رفعه في قائمة الالادمن العامين")  
 else 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽*المعرف غير صحيح*', 1, 'md')
 end end 
@@ -5148,14 +5148,14 @@ end
 if text and text:match('^رفع ادمن عام (%d+)') and ChCheck(msg) then
 local user = text:match('رفع ادمن عام (%d+)')
 DevAbs:sadd(ZOLARS..'Abs:AdminAll:',user)
-ReplyStatus(msg,user,"Reply","🇸🇦╽تم رفعه في قائمة الادمنيه العامين")  
+ReplyStatus(msg,user,"Reply","🇸🇦╽تم رفعه في قائمة الالادمن العامين")  
 end
 --     Source dev-yousef     --
 --      Rem adminall      --
 if text ==('تنزيل ادمن عام') and ChCheck(msg) then
 function prom_reply(extra, result, success)
 DevAbs:srem(ZOLARS..'Abs:AdminAll:',result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","🇸🇦╽تم تنزيله من قائمة الادمنيه العامين")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","🇸🇦╽تم تنزيله من قائمة الالادمن العامين")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5165,7 +5165,7 @@ local username = text:match('^تنزيل ادمن عام @(.*)')
 function promreply(extra,result,success)
 if result.id_ then
 DevAbs:srem(ZOLARS..'Abs:AdminAll:',result.id_)
-ReplyStatus(msg,result.id_,"Reply","🇸🇦╽تم تنزيله من قائمة الادمنيه العامين")  
+ReplyStatus(msg,result.id_,"Reply","🇸🇦╽تم تنزيله من قائمة الالادمن العامين")  
 else 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽*المعرف غير صحيح*', 1, 'md')
 end end 
@@ -5174,7 +5174,7 @@ end
 if text and text:match('^تنزيل ادمن عام (%d+)') and ChCheck(msg) then
 local user = text:match('تنزيل ادمن عام (%d+)')
 DevAbs:srem(ZOLARS..'Abs:AdminAll:',user)
-ReplyStatus(msg,user,"Reply","🇸🇦╽تم تنزيله من قائمة الادمنيه العامين")  
+ReplyStatus(msg,user,"Reply","🇸🇦╽تم تنزيله من قائمة الالادمن العامين")  
 end end
 --     Source dev-yousef     --
 --       Set Vipall       --
@@ -5536,7 +5536,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1,'🇸🇦╽لاتستطيع رفع احد وذ
 return false
 end
 DevAbs:sadd(ZOLARS..'Abs:Admins:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","🇸🇦╽تم رفعه في قائمة الادمنيه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","🇸🇦╽تم رفعه في قائمة الالادمن")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5550,7 +5550,7 @@ return false
 end
 if result.id_ then
 DevAbs:sadd(ZOLARS..'Abs:Admins:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","🇸🇦╽تم رفعه في قائمة الادمنيه")  
+ReplyStatus(msg,result.id_,"Reply","🇸🇦╽تم رفعه في قائمة الالادمن")  
 else 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽*المعرف غير صحيح*', 1, 'md')
 end end 
@@ -5563,14 +5563,14 @@ Dev_Abs(msg.chat_id_, msg.id_, 1,'🇸🇦╽لاتستطيع رفع احد وذ
 return false
 end
 DevAbs:sadd(ZOLARS..'Abs:Admins:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","🇸🇦╽تم رفعه في قائمة الادمنيه")  
+ReplyStatus(msg,user,"Reply","🇸🇦╽تم رفعه في قائمة الالادمن")  
 end
 --     Source dev-yousef     --
 --        Rem admin       --
 if text ==('تنزيل ادمن') and ChCheck(msg) then
 function prom_reply(extra, result, success)
 DevAbs:srem(ZOLARS..'Abs:Admins:'..msg.chat_id_,result.sender_user_id_)
-ReplyStatus(msg,result.sender_user_id_,"Reply","🇸🇦╽تم تنزيله من قائمة الادمنيه")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","🇸🇦╽تم تنزيله من قائمة الالادمن")  
 end 
 if tonumber(tonumber(msg.reply_to_message_id_)) > 0 then
 getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),prom_reply)
@@ -5580,7 +5580,7 @@ local username = text:match('^تنزيل ادمن @(.*)')
 function promreply(extra,result,success)
 if result.id_ then
 DevAbs:srem(ZOLARS..'Abs:Admins:'..msg.chat_id_,result.id_)
-ReplyStatus(msg,result.id_,"Reply","🇸🇦╽تم تنزيله من قائمة الادمنيه")  
+ReplyStatus(msg,result.id_,"Reply","🇸🇦╽تم تنزيله من قائمة الالادمن")  
 else 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽*المعرف غير صحيح*', 1, 'md')
 end end 
@@ -5589,7 +5589,7 @@ end
 if text and text:match('^تنزيل ادمن (%d+)') and ChCheck(msg) then
 local user = text:match('تنزيل ادمن (%d+)')
 DevAbs:srem(ZOLARS..'Abs:Admins:'..msg.chat_id_,user)
-ReplyStatus(msg,user,"Reply","🇸🇦╽تم تنزيله من قائمة الادمنيه")  
+ReplyStatus(msg,user,"Reply","🇸🇦╽تم تنزيله من قائمة الالادمن")  
 end end
 --     Source dev-yousef     --
 --       Set Vipmem       --
@@ -6497,9 +6497,9 @@ getMessage(msg.chat_id_, msg.reply_to_message_id_,donky_by_reply)
 end end
 --     Source dev-yousef     --
 if Admin(msg) then
-if text and (text:match('^تقييد دقيقه (%d+)$') or text:match('^كتم دقيقه (%d+)$') or text:match('^تقيد دقيقه (%d+)$')) and ChCheck(msg) then 
+if text and (text:match('^تقييد دقيقة (%d+)$') or text:match('^كتم دقيقة (%d+)$') or text:match('^تقيد دقيقة (%d+)$')) and ChCheck(msg) then 
 local function mut_time(extra, result,success)
-local mutept = text:match('^تقييد دقيقه (%d+)$') or text:match('^كتم دقيقه (%d+)$') or text:match('^تقيد دقيقه (%d+)$')
+local mutept = text:match('^تقييد دقيقة (%d+)$') or text:match('^كتم دقيقة (%d+)$') or text:match('^تقيد دقيقة (%d+)$')
 local Minutes = string.gsub(mutept, 'm', '')
 local num1 = tonumber(Minutes) * 60 
 if RankChecking(result.sender_user_id_, msg.chat_id_) then 
@@ -6629,10 +6629,10 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end end 
 --     Source dev-yousef     --
 if Manager(msg) then
-if text == "الادمنيه" and ChCheck(msg) or text == "الادمنية" and ChCheck(msg) then 
+if text == "الالادمن" and ChCheck(msg) or text == "الادمنية" and ChCheck(msg) then 
 local abs =  'Abs:Admins:'..msg.chat_id_
 local List = DevAbs:smembers(ZOLARS..abs)
-text = "🇸🇦╽قائمة الادمنيه ⤶ ⤹ \n• • • • • • ₪ • • • • • •\n"
+text = "🇸🇦╽قائمة الالادمن ⤶ ⤹ \n• • • • • • ₪ • • • • • •\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(ZOLARS..'Save:UserName'..v)
 if username then
@@ -6641,7 +6641,7 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then
-text = "🇸🇦╽*لا يوجد ادمنيه*"
+text = "🇸🇦╽*لا يوجد الادمن*"
 end
 Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end end
@@ -6932,10 +6932,10 @@ end
 Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 --     Source dev-yousef     -- 
-if text == "الادمنيه العامين" and ChCheck(msg) then 
+if text == "الالادمن العامين" and ChCheck(msg) then 
 local abs =  'Abs:AdminAll:'
 local List = DevAbs:smembers(ZOLARS..abs)
-text = "🇸🇦╽قائمة الادمنيه العامين ⤶ ⤹ \n• • • • • • ₪ • • • • • •\n"
+text = "🇸🇦╽قائمة الالادمن العامين ⤶ ⤹ \n• • • • • • ₪ • • • • • •\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(ZOLARS..'Save:UserName'..v)
 if username then
@@ -6944,7 +6944,7 @@ else
 text = text..k.."~ : `"..v.."`\n"
 end end
 if #List == 0 then
-text = "🇸🇦╽*لا يوجد ادمنيه عامين*"
+text = "🇸🇦╽*لا يوجد الادمن عامين*"
 end
 Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end  
@@ -8682,8 +8682,8 @@ ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم حذف قائمة
 end
 end
 if SudoBot(msg) then
-if txts[2] == 'الادمنيه العامين' or txts[2] == 'الادمنيه العام' or txtss[2] == 'الادمنيه العامين' or txtss[2] == 'الادمنيه العام' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم حذف الادمنيه العامين")  
+if txts[2] == 'الالادمن العامين' or txts[2] == 'الالادمن العام' or txtss[2] == 'الالادمن العامين' or txtss[2] == 'الالادمن العام' then
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم حذف الالادمن العامين")  
 DevAbs:del(ZOLARS..'Abs:AdminAll:')
 end
 if txts[2] == 'المميزين عام' or txts[2] == 'المميزين العامين' or txtss[2] == 'المميزين عام' or txtss[2] == 'المميزين العامين' then
@@ -8728,8 +8728,8 @@ ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم حذف المنظ
 DevAbs:del(ZOLARS..'Abs:Cleaner:'..msg.chat_id_)
 end end
 if Manager(msg) then
-if txts[2] == 'الادمنيه' or txtss[2] == 'الادمنيه' then
-ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم حذف الادمنيه")  
+if txts[2] == 'الالادمن' or txtss[2] == 'الالادمن' then
+ReplyStatus(msg,msg.sender_user_id_,"ReplyBy","🇸🇦╽تم حذف الالادمن")  
 DevAbs:del(ZOLARS..'Abs:Admins:'..msg.chat_id_)
 end
 end
@@ -8792,7 +8792,7 @@ if not BasicConstructor(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽للمنشئ الاساسي فقط', 1, 'md')
 else
 DevAbs:del(ZOLARS..'Abs:Ban:'..msg.chat_id_) DevAbs:del(ZOLARS..'Abs:Admins:'..msg.chat_id_) DevAbs:del(ZOLARS..'User:Donky:'..msg.chat_id_) DevAbs:del(ZOLARS..'Abs:VipMem:'..msg.chat_id_) DevAbs:del(ZOLARS..'Abs:Filters:'..msg.chat_id_) DevAbs:del(ZOLARS..'Abs:Muted:'..msg.chat_id_)
-Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽تم حذف ⤶ ❨ قائمة المنع • المحظورين • المكتومين • الادمنيه • المميزين • المطايه ❩ بنجاح \n ✓", 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽تم حذف ⤶ ❨ قائمة المنع • المحظورين • المكتومين • الالادمن • المميزين • المطايه ❩ بنجاح \n ✓", 1, 'md')
 end end
 --     Source dev-yousef     --
 if text and text:match("^حذف جميع الرتب$") and ChCheck(msg) or text and text:match("^مسح جميع الرتب$") and ChCheck(msg) or text and text:match("^تنزيل جميع الرتب$") and ChCheck(msg) then
@@ -8808,7 +8808,7 @@ local donky = DevAbs:smembers(ZOLARS..'User:Donky:'..msg.chat_id_)
 if #basicconstructor ~= 0 then basicconstructort = 'المنشئين الاساسيين • ' else basicconstructort = '' end
 if #constructor ~= 0 then constructort = 'المنشئين • ' else constructort = '' end
 if #Managers ~= 0 then Managerst = 'المدراء • ' else Managerst = '' end
-if #admins ~= 0 then adminst = 'الادمنيه • ' else adminst = '' end
+if #admins ~= 0 then adminst = 'الالادمن • ' else adminst = '' end
 if #vipmem ~= 0 then vipmemt = 'المميزين • ' else vipmemt = '' end
 if #donky ~= 0 then donkyt = 'المطايه • ' else donkyt = '' end
 if #basicconstructor ~= 0 or #constructor ~= 0 or #Managers ~= 0 or #admins ~= 0 or #vipmem ~= 0 or #donky ~= 0 then 
@@ -9051,12 +9051,12 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, t, 1, 'html')
 end
 end
 --     Source dev-yousef     --
-if text and (text == "تفعيل اوامر النسب" or text == "تفعيل نسبه الحب" or text == "تفعيل نسبه الكره" or text == "تفعيل نسبه الرجوله" or text == "تفعيل نسبه الانوثه" or text == "تفعيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
+if text and (text == "تفعيل اوامر النسب" or text == "تفعيل نسبه الحب" or text == "تفعيل نسبه الكره" or text == "تفعيل نسبه الرجولة" or text == "تفعيل نسبه الانوثه" or text == "تفعيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
 local ZOLARSTEAM = '🇸🇦╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n🇸🇦╽تم تفعيل اوامر النسب'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:del(ZOLARS..'Abs:Nsba:Abs'..msg.chat_id_) 
 end
-if text and (text == "تعطيل اوامر النسب" or text == "تعطيل نسبه الحب" or text == "تعطيل نسبه الكره" or text == "تعطيل نسبه الرجوله" or text == "تعطيل نسبه الانوثه" or text == "تعطيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
+if text and (text == "تعطيل اوامر النسب" or text == "تعطيل نسبه الحب" or text == "تعطيل نسبه الكره" or text == "تعطيل نسبه الرجولة" or text == "تعطيل نسبه الانوثه" or text == "تعطيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
 local ZOLARSTEAM = '🇸🇦╽اهلا عزيزي ⤶ '..AbsRank(msg)..' \n🇸🇦╽تم تعطيل اوامر النسب'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, ZOLARSTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:set(ZOLARS..'Abs:Nsba:Abs'..msg.chat_id_,true)  
@@ -9096,14 +9096,14 @@ DevAbs:del(ZOLARS..'HataNsba:Abs'..msg.chat_id_..msg.sender_user_id_)
 return false 
 end
 if not DevAbs:get(ZOLARS..'Abs:Nsba:Abs'..msg.chat_id_) then
-if text and (text == "نسبه الرجوله" or text == "نسبة الرجوله" or text == "نسبه رجوله" or text == "نسبة رجوله") and ChCheck(msg) then
+if text and (text == "نسبه الرجولة" or text == "نسبة الرجولة" or text == "نسبه رجولة" or text == "نسبة رجولة") and ChCheck(msg) then
 DevAbs:set(ZOLARS..'RjolaNsba:Abs'..msg.chat_id_..msg.sender_user_id_,true) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽قم بارسل اسم الشخص لقياس نسبة رجولته كمثال ⤶ جاك', 1, 'md')
 end
 end
-if text and text ~= "نسبه الرجوله" and text ~= "نسبة الرجوله" and text ~= "نسبه رجوله" and text ~= "نسبة رجوله" and DevAbs:get(ZOLARS..'RjolaNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
+if text and text ~= "نسبه الرجولة" and text ~= "نسبة الرجولة" and text ~= "نسبه رجولة" and text ~= "نسبة رجولة" and DevAbs:get(ZOLARS..'RjolaNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
 if text and text == 'الغاء' then 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم الغاء امر نسبة الرجوله ', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽تم الغاء امر نسبة الرجولة ', 1, 'md')
 DevAbs:del(ZOLARS..'RjolaNsba:Abs'..msg.chat_id_..msg.sender_user_id_) 
 return false 
 end 
@@ -9464,11 +9464,11 @@ tdcli_function({ID="GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""
 end
 end
 --     Source dev-yousef     --
-if text and text:match("^معلومات المجموعة$") and ChCheck(msg) or text and text:match("^عدد الاعضاء$") and ChCheck(msg) or text and text:match("^عدد القروب$") and ChCheck(msg) or text and text:match("^عدد الادمنيه$") and ChCheck(msg) or text and text:match("^عدد المحظورين$") and ChCheck(msg) then
+if text and text:match("^معلومات المجموعة$") and ChCheck(msg) or text and text:match("^عدد الاعضاء$") and ChCheck(msg) or text and text:match("^عدد القروب$") and ChCheck(msg) or text and text:match("^عدد الالادمن$") and ChCheck(msg) or text and text:match("^عدد المحظورين$") and ChCheck(msg) then
 local Muted = DevAbs:scard(ZOLARS.."Abs:Muted:"..msg.chat_id_) or "0"
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,dp) 
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المجموعة ⤶ ❨ '..dp.title_..' ❩\n🇸🇦╽الايدي ⤶ ❨ '..msg.chat_id_..' ❩\n🇸🇦╽عدد الاعضاء ⤶ ❨ *'..data.member_count_..'* ❩\n🇸🇦╽عدد الادمنيه ⤶ ❨ *'..data.administrator_count_..'* ❩\n🇸🇦╽عدد المطرودين ⤶ ❨ *'..data.kicked_count_..'* ❩\n🇸🇦╽عدد المكتومين ⤶ ❨ *'..Muted..'* ❩\n🇸🇦╽عدد رسائل المجموعة ⤶ ❨ *'..(msg.id_/2097152/0.5)..'* ❩\n• • • • • • ₪ • • • • • •\n', 1, 'md') 
+Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽المجموعة ⤶ ❨ '..dp.title_..' ❩\n🇸🇦╽الايدي ⤶ ❨ '..msg.chat_id_..' ❩\n🇸🇦╽عدد الاعضاء ⤶ ❨ *'..data.member_count_..'* ❩\n🇸🇦╽عدد الالادمن ⤶ ❨ *'..data.administrator_count_..'* ❩\n🇸🇦╽عدد المطرودين ⤶ ❨ *'..data.kicked_count_..'* ❩\n🇸🇦╽عدد المكتومين ⤶ ❨ *'..Muted..'* ❩\n🇸🇦╽عدد رسائل المجموعة ⤶ ❨ *'..(msg.id_/2097152/0.5)..'* ❩\n• • • • • • ₪ • • • • • •\n', 1, 'md') 
 end,nil)
 end,nil)
 end
@@ -9500,7 +9500,7 @@ ConstructorAbs = "["..Abs.first_name_.."](T.me/"..(Abs.username_ or "zzzii")..")
 else 
 ConstructorAbs = "حساب محذوف"
 end
-Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽المجموعة ⤶ ["..dp.title_.."]("..LinkGroup..")\n🇸🇦╽الايدي ⤶ ( `"..ChatId.."` )\n🇸🇦╽المنشئ ⤶ "..ConstructorAbs.."\n🇸🇦╽عدد المدراء ⤶ ( *"..ManagerList.."* )\n🇸🇦╽عدد المنشئين ⤶ ( *"..ConstructorList.."* )\n🇸🇦╽عدد الادمنيه ⤶ ( *"..AdminsList.."* )\n🇸🇦╽عدد المميزين ⤶ ( *"..VipList.."* )\n🇸🇦╽عدد المحظورين ⤶ ( *"..BanedList.."* )\n🇸🇦╽عدد المقيدين ⤶ ( *"..TkeedList.."* )\n🇸🇦╽عدد المكتومين ⤶ ( *"..MutedList.."* )", 1,"md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "🇸🇦╽المجموعة ⤶ ["..dp.title_.."]("..LinkGroup..")\n🇸🇦╽الايدي ⤶ ( `"..ChatId.."` )\n🇸🇦╽المنشئ ⤶ "..ConstructorAbs.."\n🇸🇦╽عدد المدراء ⤶ ( *"..ManagerList.."* )\n🇸🇦╽عدد المنشئين ⤶ ( *"..ConstructorList.."* )\n🇸🇦╽عدد الالادمن ⤶ ( *"..AdminsList.."* )\n🇸🇦╽عدد المميزين ⤶ ( *"..VipList.."* )\n🇸🇦╽عدد المحظورين ⤶ ( *"..BanedList.."* )\n🇸🇦╽عدد المقيدين ⤶ ( *"..TkeedList.."* )\n🇸🇦╽عدد المكتومين ⤶ ( *"..MutedList.."* )", 1,"md")
 end,nil)
 end
 end
@@ -10320,7 +10320,7 @@ local Text = [[
 🇸🇦╽اهلا بك في قائمة الاوامر ⤶ ⤹ 
 • • • • • • ₪ • • • • • •
 🇸🇦╽م1 ⤶ اوامر الحماية
-🇸🇦╽م2 ⤶ اوامر الادمنيه
+🇸🇦╽م2 ⤶ اوامر الالادمن
 🇸🇦╽م3 ⤶ اوامر المدراء
 🇸🇦╽م4 ⤶ اوامر المنشئين
 🇸🇦╽م5 ⤶ اوامر المطورين
@@ -10329,7 +10329,7 @@ local Text = [[
 🇸🇦╽[Source Channel](https://t.me/yousef_labban1)
 ]] 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..msg.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..msg.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..msg.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="اوامر الالادمن",callback_data="/HelpList2:"..msg.sender_user_id_},{text="اوامر الحماية",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..msg.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..msg.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="• اخفاء الأوامر •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
 Msg_id = msg.id_/2097152/0.5
 return https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(Help or Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
@@ -10424,7 +10424,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '🇸🇦╽هذا الامر يخص الرت�
 else
 local Help = DevAbs:get(ZOLARS..'Abs:Help2')
 local Text = [[
-🇸🇦╽اوامر الادمنيه ⤶ ⤹
+🇸🇦╽اوامر الالادمن ⤶ ⤹
 • • • • • • ₪ • • • • • •
 🇸🇦╽الاعدادت
 🇸🇦╽تاك للكل 
@@ -10472,7 +10472,7 @@ local Text = [[
 🇸🇦╽المقيدين • حذف المقيدين
 🇸🇦╽المحظورين • حذف المحظورين
 • • • • • • ₪ • • • • • •
-🇸🇦╽تقييد دقيقه + عدد الدقائق
+🇸🇦╽تقييد دقيقة + عدد الدقائق
 🇸🇦╽تقييد ساعه + عدد الساعات
 🇸🇦╽تقييد يوم + عدد الايام
 🇸🇦╽الغاء تقييد ⤶ لالغاء التقييد بالوقت
@@ -10518,7 +10518,7 @@ local Text = [[
 • • • • • • ₪ • • • • • •
 🇸🇦╽تنزيل الكل
 🇸🇦╽رفع ادمن • تنزيل ادمن
-🇸🇦╽الادمنيه • حذف الادمنيه
+🇸🇦╽الالادمن • حذف الالادمن
 • • • • • • ₪ • • • • • •
 🇸🇦╽تثبيت
 🇸🇦╽الغاء التثبيت
@@ -10640,7 +10640,7 @@ local Text = [[
 🇸🇦╽رفع • تنزيل ⤶ مدير عام
 🇸🇦╽حذف • المدراء العامين 
 🇸🇦╽رفع • تنزيل ⤶ ادمن عام
-🇸🇦╽حذف • الادمنيه العامين 
+🇸🇦╽حذف • الالادمن العامين 
 🇸🇦╽رفع • تنزيل ⤶ مميز عام
 🇸🇦╽حذف • المميزين عام 
 • • • • • • ₪ • • • • • •
@@ -10718,7 +10718,7 @@ local Text = [[
 🇸🇦╽مين ضافني • مشاهدات المنشور • الرابط 
 🇸🇦╽ايدي المجموعة • معلومات المجموعة 
 🇸🇦╽نسبه الحب • نسبه الكره • نسبه الغباء 
-🇸🇦╽نسبه الرجوله • نسبه الانوثه • التفاعل
+🇸🇦╽نسبه الرجولة • نسبه الانوثه • التفاعل
 • • • • • • ₪ • • • • • •
 🇸🇦╽لقبه + بالرد
 🇸🇦╽قول + الكلمه
