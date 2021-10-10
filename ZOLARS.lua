@@ -4725,7 +4725,7 @@ getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),bosh)
 end
 end
 end
-if text == ("صيحه") or text == ("صيحها") or text == ("صيحهه") or text == ("صيح") then
+if text == ("صيحه") or text == ("صيحها") or text == ("ناديه") or text == ("صيح") then
 if not DevAbs:get(ZOLARS..'Abs:Lock:Stupid'..msg.chat_id_) then
 function seha(extra, result, success)
 if tonumber(result.sender_user_id_) == tonumber(ZOLARS) then 
@@ -4738,7 +4738,7 @@ return false
 end 
 local ZOLARSTEAM = "صار صار 🏃🏻‍♂️♥️" 
 Dev_Abs(msg.chat_id_, msg.id_, 1,ZOLARSTEAM, 1, 'md') 
-local ZOLARSTEAM = {"تتعال ححب محتاجيك🙂🍭","تعال يولل استاذكك ايريدككك😒🔪","يمعوود تعاال يريدوكك🤕♥️","تعال لكك ديصيحوك😐🖤"} 
+local ZOLARSTEAM = {"تتعال ححب محتاجيك🙂🍭","ايش معاك تتأخر ؟؟؟؟؟؟😒🔪","يمعوود تعاال يريدوكك🤕♥️","تعااال لنا ساعة نناديك😐🖤"} 
 Dev_Abs(msg.chat_id_, result.id_, 1,''..ZOLARSTEAM[math.random(#ZOLARSTEAM)], 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
